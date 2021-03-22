@@ -7,6 +7,7 @@ import Mobile from './components/Mobile';
 
 const App = () => {
     const [windowSize, setWindowSize] = useState({ "wh" : window.innerHeight, "ww" : window.innerWidth });
+    const [view, setView] = useState(null);
     const [orders, setOrders] = useState([]);
 
     useEffect(async () => {
@@ -29,7 +30,7 @@ const App = () => {
         return setWindowSize({ "wh" : window.innerHeight, "ww" : window.innerWidth });
     }
 
-    return windowSize.ww < 1100 || windowSize.wh < 700 ? <Mobile windowSize={windowSize} orders={orders} /> : <Web windowSize={windowSize} orders={orders} />;
+    return windowSize.ww < 1100 || windowSize.wh < 700 ? <Mobile windowSize={windowSize} orders={orders} view={view} setView={e => setView(e)} /> : <Web windowSize={windowSize} orders={orders} orders={orders} view={view} setView={e => setView(e)} />;
 }
 
 export default App;
