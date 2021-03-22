@@ -1,8 +1,13 @@
 // react
 import React from 'react';
 
+// css
+import './Navbar.css';
 
-const Navbar = () => {
+
+const Navbar = ({ setNavSelection }) => {
+    const navlist = ['All Stores', 'Norwalk', 'Danbury', 'Yonkers', 'Farmingdale', 'Newington', 'East Meadow', 'Paramus'];
+
     return (
         <div className="container">
             <a className="navbar-brand">Line Reports</a>
@@ -11,27 +16,11 @@ const Navbar = () => {
             </button>
             <div className="collapse navbar-collapse" id="collapse">
                 <ul className="navbar-nav mr-auto">
-                    <li className="nav-item">
-                        <a className="nav-link">NOR</a>
-                    </li>
-                    <li className="nav-item">
-                        <a className="nav-link">DAN</a>
-                    </li>
-                    <li className="nav-item">
-                        <a className="nav-link">YON</a>
-                    </li>
-                    <li className="nav-item">
-                        <a className="nav-link">FARM</a>
-                    </li>
-                    <li className="nav-item">
-                        <a className="nav-link">NWG</a>
-                    </li>
-                    <li className="nav-item">
-                        <a className="nav-link">EM</a>
-                    </li>
-                    <li className="nav-item">
-                        <a className="nav-link">PRM</a>
-                    </li>
+                    {navlist.map((item, i) => (
+                        <li className="nav-item" key={i}>
+                            <a className="nav-link" onClick={() => setNavSelection(item)}>{item}</a>
+                        </li>
+                    ))}
                 </ul>
             </div>
         </div>

@@ -9,5 +9,9 @@ html, body, #root, .App {
     width: 100%;
 }
 
+.div {
+    padding: 150px;
+}
+
 
 

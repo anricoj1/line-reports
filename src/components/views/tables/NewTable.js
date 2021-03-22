@@ -1,11 +1,17 @@
 // react
 import React from 'react';
 
+// components
+import Order from '../Order';
+
+// css
+import './Table.css';
 
 
-const Table = ({ headers, data }) => {
+
+const NewTable = ({ headers, data, setView, setAppState }) => {
     return (
-        <table className="table table-hover">
+        <table className="table table-striped">
             <thead>
                 <tr>
                     {headers.map((header, i) => (
@@ -15,7 +21,7 @@ const Table = ({ headers, data }) => {
                 {data.map((order, j) => (
                     <tr key={j}>
                         {Object.values(order).map((row, k) => (
-                            <td key={k}>{row}</td>
+                            <td key={k} onClick={() => { setAppState('Order'); setView(<Order headers={headers} order={order} setAppState={e => setAppState(e)} />)}}>{row}</td>
                         ))}
                     </tr>
                 ))}
@@ -24,4 +30,4 @@ const Table = ({ headers, data }) => {
     )
 }
 
-export default Table;
+export default NewTable;
