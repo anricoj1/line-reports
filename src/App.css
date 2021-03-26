@@ -10,7 +10,17 @@ html, body, #root, .App {
 }
 
 .div {
-    padding: 150px;
+    padding: 120px;
+}
+
+.taskbar {
+    position: relative;
+    width: 100%;
+}
+
+.switch-component {
+    position: relative;
+    margin-top: 80px;
 }
 
 

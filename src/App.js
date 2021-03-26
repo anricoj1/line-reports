@@ -13,9 +13,10 @@ const App = () => {
     const [orders, setOrders] = useState([]);
     const [navselection, setNavSelection] = useState('All Stores');
     const [appState, setAppState] = useState('Table');
+    const [view, setView] = useState(null);
 
     useEffect(async () => {
-        const response = await fetch('https://storeapi.grocerkey.com/orderview', {
+        const response = await fetch('https://storeapi.grocerkey.com/orderview?pagesize=50', {
             method: 'GET',
             mode: 'cors',
             cache: 'no-cache',
@@ -36,7 +37,7 @@ const App = () => {
                 <Navbar setNavSelection={e => setNavSelection(e)} />
             </div>
             <div className="switch-component">
-                {orders.length < 1 ? null : <Div navselection={navselection} orders={orders} appState={appState} setAppState={e => setAppState(e)} />}
+                {orders.length < 1 ? null : <Div navselection={navselection} orders={orders} appState={appState} setAppState={e => setAppState(e)} view={view} setView={e => setView(e)} />}
             </div>
         </div>
     )

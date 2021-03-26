@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "react-scripts test",
-    "start": "react-scripts start"
+    "start": "react-scripts start",
+    "proxy": "cd proxy; python main.py"
   },
   "author": "Jason Anrico",
   "license": "ISC",

@@ -1,0 +1,13 @@
+.links {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    margin: 20px 0px 20px 35%;
+
+    width: 100%;
+}
+
+.link {
+    padding: 20px;
+    list-style: none;
+}

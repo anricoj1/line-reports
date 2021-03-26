@@ -1,0 +1,15 @@
+.summary {
+    padding-bottom: 30px;
+}
+
+.table {
+    border: 1px solid grey;
+}
+
+th {
+    border: 1px solid black;
+}
+
+td {
+    border: 1px solid grey;
+}
