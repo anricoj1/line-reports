@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 
 // components
 import Report from './views/Report';
+import DueList from './views/DueList';
 
 // css
 import './Taskbar.css';
@@ -132,7 +133,10 @@ const TaskBar = ({ navselection, setView, setAppState, appState, orders }) => {
                 <input type="date" value={date} onChange={e => setDate(e.target.value)}></input>
                 <button onClick={() => { setAppState(date); setView(<Report orderlist={orderlist} date={date} includeditems={includeditems} comments={comments} />)}}>Line Report for {navselection} (Double Click)</button>
             </li>
-            {appState === 'Line-Report' || appState === date ? <li className="link"><button className="btn btn-danger btn-sm" onClick={() => setAppState('Table')}>Back to Table</button></li> : null}
+            <li className="link">
+                <button className="btn btn-success btn-sm" onClick={() => { setAppState('Due-List'); setView(<DueList />)}}>Due List</button>
+            </li>
+            {appState === 'Line-Report' || appState === date || appState === 'Due-List' ? <li className="link"><button className="btn btn-danger btn-sm" onClick={() => setAppState('Table')}>Back to Table</button></li> : null}
         </ul>
     )
 }

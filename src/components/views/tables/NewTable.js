@@ -1,5 +1,5 @@
 // react
-import React from 'react';
+import React, { useState } from 'react';
 
 // components
 import Order from '../Order';
@@ -10,6 +10,7 @@ import './Table.css';
 
 
 const NewTable = ({ headers, data, setView, setAppState }) => {
+
     return (
         <table className="table table-striped">
             <thead>
@@ -21,7 +22,7 @@ const NewTable = ({ headers, data, setView, setAppState }) => {
                 {data.map((order, j) => (
                     <tr key={j}>
                         {Object.values(order).map((row, k) => (
-                            <td key={k} onClick={() => { setAppState('Order'); setView(<Order headers={headers} order={order} setAppState={e => setAppState(e)} />)}}>{row}</td>
+                            <td key={k} onClick={() => { setAppState('Order'); setView(<Order headers={headers} order={order} setAppState={e => setAppState(e)} />); }}>{row}</td>
                         ))}
                     </tr>
                 ))}

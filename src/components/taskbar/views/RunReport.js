@@ -16,6 +16,8 @@ const RunReport = ({ linereport, date, location, comments }) => {
         if (item.includes('Fresh Mozzarella')) return 'Deli';
         if (item.includes('3 Foot Grinder')) return 'Deli';
         if (item.includes('Wrap Platter')) return 'Deli';
+        if (item.includes('Cheese and Pepperoni Platter')) return 'Deli';
+        if (item.includes('Sandwich Platter')) return 'Deli';
         if (item.includes('sauce')) return 'Kitchen';
         if (item.includes('Broccoli Rabe')) return 'Kitchen';
         if (item.includes('Boneless')) return 'Kitchen';
@@ -41,6 +43,8 @@ const RunReport = ({ linereport, date, location, comments }) => {
         if (item.includes('Green Bean')) return 'Kitchen';
         if (item.includes('Organic Roasted Tri-Colored Carrots')) return 'Kitchen';
         if (item.includes('Organic Tri Colored Baby Carrots')) return 'Kitchen';
+        if (item.includes('New England Clam Chowder')) return 'Kitchen';
+        if (item.includes('Chicken')) return 'Kitchen';
         if (item.includes('Meatball')) return 'Kitchen';
         if (item.includes('Salad')) return 'Salbar'
         if (item.includes('Fruit')) return 'Salbar';
@@ -79,7 +83,7 @@ const RunReport = ({ linereport, date, location, comments }) => {
             <div className="summary">
             <h1>Order Requirements</h1>
                 <h2><small>{location}</small></h2>
-                <h3>Report for {date}</h3>
+                <h3>Report for 3/27/2021</h3>
                 <h4>If you see (Size (ex: Extra Large) / Cook Type (ex: Medium Rare) Refer To The <b>PREVIOUS PRODUCT</b> In The List. There Currently Isn't A Way For Me To Attatch It To That Specific Item. (Will Update In Future!)</h4>
             </div>
             {comments.length !== 0 ?

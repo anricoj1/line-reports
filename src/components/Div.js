@@ -11,11 +11,13 @@ import TaskBar from './taskbar/TaskBar';
 const Div = ({ navselection, orders, appState, setAppState, view, setView }) => {
     let arr = [];
 
-    orders.Result.map(order => {
-        if (navselection !== 'All Stores') {
-            if (order.StoreName.includes(navselection)) return arr.push(order);
-        } else {
-            return arr = orders.Result;
+    orders.map(order => {
+        if (order.Status !== 'Canceled') {
+            if (navselection !== 'All Stores') {
+                if (order.StoreName.includes(navselection)) return arr.push(order);
+            } else {
+                return arr = orders;
+            }
         }
     });
 
