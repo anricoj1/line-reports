@@ -4,24 +4,34 @@
     box-sizing: border-box;
 }
 
-html, body, #root, .App {
+html, body, #root, .Web, .Mobile {
     height: 100%;
     width: 100%;
 }
 
-.div {
-    padding: 120px;
+.component {
+    padding: 150px;
 }
 
 .taskbar {
-    position: relative;
+    text-align: center;
+    margin-top: 150px;
+}
+
+.links {
+    display: flex;
+}
+
+.link {
     width: 100%;
+    list-style: none;
 }
 
-.switch-component {
-    position: relative;
-    margin-top: 80px;
+.table {
+    border: 1px solid black;
 }
 
-
+.table th, tr, td {
+    border: 1px solid black;
+}
 

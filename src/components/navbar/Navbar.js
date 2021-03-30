@@ -5,7 +5,7 @@ import React from 'react';
 import './Navbar.css';
 
 
-const Navbar = ({ setNavSelection }) => {
+const Navbar = ({ setNavSelection, setAppState }) => {
     const navlist = ['All Stores', 'Norwalk', 'Danbury', 'Yonkers', 'Farmingdale', 'Newington', 'East Meadow', 'Paramus'];
 
     return (
@@ -18,7 +18,7 @@ const Navbar = ({ setNavSelection }) => {
                 <ul className="navbar-nav mr-auto">
                     {navlist.map((item, i) => (
                         <li className="nav-item" key={i}>
-                            <a className="nav-link" onClick={() => setNavSelection(item)}>{item}</a>
+                            <a className="nav-link" onClick={() => { setNavSelection(item); setAppState(item)}}>{item}</a>
                         </li>
                     ))}
                 </ul>

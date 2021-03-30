@@ -1,0 +1,38 @@
+// react
+import React from 'react';
+
+// components
+import Order from './Order';
+
+
+const OrderTable = ({ headers, data, store, setAppState, setComponent }) => {
+    return (
+        <div>
+            <h2 className="text-center">{store} W/ {data.length} Orders</h2>
+            <table className="table">
+                <thead>
+                    <tr>
+                        {headers.map((header, i) => (
+                            <th key={i}>{header}</th>
+                        ))}
+                    </tr>
+                    {data.map((order, j) => (
+                        <tr key={j} onClick={() => { setAppState('Order'); setComponent(<Order order={order} setAppState={e => setAppState(e)} />)}}>
+                            <td>{order.Order.OrderID}</td>
+                            <td>{order.Order.Name}</td>
+                            <td>{order.Order.PhoneNumber}</td>
+                            <td>{order.Order.PickupLocation}</td>
+                            <td>{order.Order.Status}</td>
+                            <td>{order.Order.StartTimeWindow}</td>
+                            <td>{order.Order.TimeStamp}</td>
+                            <td>{order.Order.Total}</td>
+                            <td>{order.Order.TotalProductCount}</td>
+                        </tr>
+                    ))}
+                </thead>
+            </table>
+        </div>
+    )
+}
+
+export default OrderTable;
