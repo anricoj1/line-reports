@@ -1,5 +1,6 @@
 import json
 import requests
+import os
 from flask import Flask, jsonify
 from dotenv import load_dotenv
 load_dotenv()
@@ -86,6 +87,5 @@ def orders():
 
 
 
-
 if __name__ == '__main__':
-    proxy.run(debug=True)
+    proxy.run(host='0.0.0.0', debug=False, port=os.environ.get('PORT', 80))

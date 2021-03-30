@@ -7,7 +7,7 @@
     "test": "react-scripts test",
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "proxy": "cd proxy; python main.py"
+    "proxy": "cd proxy && python3 main.py"
   },
   "author": "Jason Anrico",
   "license": "ISC",
