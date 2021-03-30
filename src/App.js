@@ -10,7 +10,7 @@ const App = () => {
     const [orders, setOrders] = useState([]); //array of orders state
 
     useEffect(async () => {
-        const response = await fetch('/orders'); //fetch from proxy
+        const response = await fetch('/proxy/orders'); //fetch from proxy
         
         return setOrders(await response.json());
     },[])

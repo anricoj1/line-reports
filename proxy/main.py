@@ -4,7 +4,7 @@ from flask import Flask, jsonify
 from dotenv import load_dotenv
 load_dotenv()
 
-proxy = Flask(__name__)
+proxy = Flask(__name__, static_folder="../build", static_url_path='/')
 
 arr = []
 
@@ -75,9 +75,12 @@ for result in results['Result']:
 
         arr.append(orderData)
 
+@proxy.route('/')
+def index():
+    return proxy.send_static_file('index.html')
 
 
-@proxy.route('/orders', methods=['GET'])
+@proxy.route('/proxy/orders', methods=['GET'])
 def orders():
     return jsonify(arr)
 
