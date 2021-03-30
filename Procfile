@@ -1,1 +1,1 @@
-web: gunicorn main:proxy
+web: gunicorn main:main
