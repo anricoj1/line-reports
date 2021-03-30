@@ -1,1 +1,1 @@
-web: gunicorn ./proxy/main:proxy
+web: gunicorn ./proxy/main:proxy --package
