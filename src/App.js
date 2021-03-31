@@ -17,7 +17,7 @@ const App = () => {
 
 
     //loading? wait on render else render div
-    return !orders[0] ? <NullComponent /> : <DivComponent orders={orders} defaultHeaders={['Order #', 'Name', 'Cell', 'Location', 'Status', 'Date & Time Fufillment', 'Date & Time Placed', 'Total', 'Product Count']} />;
+    return !orders[0] ? <NullComponent msg={'Waiting On Data Fetch...'} /> : <DivComponent orders={orders} defaultHeaders={['Order #', 'Name', 'Cell', 'Location', 'Status', 'Date & Time Fufillment', 'Date & Time Placed', 'Total', 'Product Count']} />;
 }
 
 export default App;

@@ -35,3 +35,11 @@ html, body, #root, .Web, .Mobile {
     border: 1px solid black;
 }
 
+.btn {
+    margin: 5px;
+}
+
+.table tr:hover {
+    background-color: yellow;
+}
+

@@ -4,10 +4,11 @@ import React, { useState } from 'react';
 // components
 import Navbar from './navbar/Navbar';
 import OrderTable from './OrderTable';
-import LineReport from './LineReport';
+import Taskbar from './Taskbar';
 
 // css
 import '../App.css';
+
 
 
 const DivComponent = ({ orders, defaultHeaders }) => {
@@ -16,10 +17,13 @@ const DivComponent = ({ orders, defaultHeaders }) => {
     const [component, setComponent] = useState(<OrderTable headers={defaultHeaders} data={orders} store={navSelection} setAppState={e => setAppState(e)} setComponent={e => setComponent(e)} />); //mount init {component}
     const [date, setDate] = useState(new Date());
     let arr = [];
+    let newarr = [];
 
     orders.map(order => { //iter orders to query by store
         if (navSelection !== 'All Stores') {
-            if (order.Order.StoreName.includes(navSelection)) return arr.push(order)
+            if (order.Order.Status !== 'Complete') {
+                if (order.Order.StoreName.includes(navSelection)) return arr.push(order)
+            }
         } else {
             arr = orders;
         }
@@ -34,8 +38,6 @@ const DivComponent = ({ orders, defaultHeaders }) => {
 
 
     const filterByDate = (date) => { //filter by date push to (newarr) & return
-        let newarr = [];
-
         arr.map(order => {
             let orderDate = order.Order.StartTimeWindow.toString().substring(0, 9);
             let selectorDate = `${date.toString().substring(5, 7)}/${date.toString().substring(8, 10)}/${date.toString().substring(0, 4)}`;
@@ -50,20 +52,13 @@ const DivComponent = ({ orders, defaultHeaders }) => {
     return (
         <div className="App">
             <div className="navbar navbar-expand-lg navbar-dark bg-success">
-                <Navbar setNavSelection={e => setNavSelection(e)} setAppState={e => setAppState(e)} />
+                <Navbar setNavSelection={e => setNavSelection(e)} setAppState={e => setAppState(e)} date={date} />
             </div>
             <div className="taskbar">
-                <h3><small>Canceled Orders Are Omitted</small></h3>
-                <ul className="links">
-                    <li className="link">
-                        <input type="date" value={date} onChange={e => { setDate(e.target.value); setAppState(date) }}></input>
-                        <button type="submit" onClick={() => setComponent(<OrderTable headers={defaultHeaders} data={filterByDate(date)} store={navSelection} setAppState={e => setAppState(e)} setComponent={e => setComponent(e)} />)}>Submit</button>
-                    </li>
-                </ul>
-                <li className="link"><button className="btn btn-danger btn-sm" onClick={() => { setAppState('Line-Report'); setComponent(<LineReport orders={filterByDate(date)} date={date} navSelection={navSelection} />)}}>Line Report</button></li>
+                <Taskbar setComponent={e => setComponent(e)} setDate={e => setDate(e)} date={date} defaultHeaders={defaultHeaders} filterByDate={e => filterByDate(e)} newarr={newarr} navSelection={navSelection} setAppState={e => setAppState(e)} />
             </div>
             <div className="component">
-                {appState === navSelection || appState === date ? <OrderTable headers={defaultHeaders} data={arr} store={navSelection} setAppState={e => setAppState(e)} setComponent={e => setComponent(e)} /> : component}
+                {appState === navSelection || appState === date || appState === 'Table' ? <OrderTable headers={defaultHeaders} data={arr} store={navSelection} setAppState={e => setAppState(e)} setComponent={e => setComponent(e)} /> : component}
             </div>
         </div>
     )

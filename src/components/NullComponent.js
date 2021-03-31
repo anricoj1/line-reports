@@ -11,7 +11,8 @@ const NullComponent = ({ msg }) => {
                 <Navbar />
             </div>
             <div className="text-center">
-                <span className="fa fa-circle-notch fa-spin fa-lg"></span>
+                <h3>{msg} <span className="fa fa-circle-notch fa-spin"></span></h3>
+                
             </div>
         </div>
     )

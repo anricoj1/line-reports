@@ -17,7 +17,7 @@ const OrderTable = ({ headers, data, store, setAppState, setComponent }) => {
                         ))}
                     </tr>
                     {data.map((order, j) => (
-                        <tr key={j} onClick={() => { setAppState('Order'); setComponent(<Order order={order} setAppState={e => setAppState(e)} />)}}>
+                        <tr key={j} onDoubleClick={() => { setAppState('Order'); setComponent(<Order order={order} setAppState={e => setAppState(e)} />)}}>
                             <td>{order.Order.OrderID}</td>
                             <td>{order.Order.Name}</td>
                             <td>{order.Order.PhoneNumber}</td>
