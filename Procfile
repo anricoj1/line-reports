@@ -1,1 +1,1 @@
-web: gunicorn ./proxy/main:proxy --package
+web: gunicorn 'proxy.main:proxy' --preload

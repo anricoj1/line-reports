@@ -63,18 +63,18 @@ for result in results['Result']:
             'storeCode': '67879',
             'auth_token': 'A/p4eEWnm3e+G7dnuwFFigTeX4iurSR04JRCHPc2Wl4Qn8rNvKIPJ2zmBCLnMOnbTiVfr6S4D6MBgX9DXzKDh0gUf53HEt3H9M95zzUrNVdgQM6r0BFFP7r8yzh4oziefaVqmj/1wZA81tSmXC5BIABJrWjXGtfXv0wvzR3oi87gRTj+9Jm3g0bzn0RanksLYMnIZT/uU97kJBtWW8IPng=='
         })
-
+            
         fullorder = request.json()
-
+            
         orderData = {
             "Order": result,
             "Main":  fullorder['OrderLines'][0]['Product']['Name'],
             "Options": [x['Value'] for x in fullorder['OrderLines'][0]['Options']],
             "Included": getIncludedItems(fullorder['OrderLines'][0]['Product']['UPC'])
         }
-
-
+            
         arr.append(orderData)
+
 
 @proxy.route('/')
 def index():
@@ -88,4 +88,4 @@ def orders():
 
 
 if __name__ == '__main__':
-    proxy.run(host='0.0.0.0', debug=False, port=os.environ.get('PORT', 80))
+    proxy.run(host='0.0.0.0', debug=False, port=os.environ.get('PORT', 8080))
