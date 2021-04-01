@@ -65,6 +65,36 @@ class LineItem {
         if (item.includes('Fruit')) return 'Produce';
         if (item.includes('Shrimp')) return 'Seafood';
         if (item.includes('Lobster')) return 'Seafood';
+        if (item.includes('Italian Style Baked Ziti')) return 'Kitchen';
+        if (item.includes('Sausage Stuffed Loaf')) return 'Kitchen';
+        if (item.includes('Coleslaw')) return 'Kitchen';
+        if (item.includes('Poached Salmon')) return 'Kitchen';
+        if (item.includes('Roasted Garlic Caprese Flatbread')) return 'Kitchen';
+        if (item.includes('Pepperoni Flatbread Pizza')) return 'Pizza';
+        if (item.includes('Smoked Salmon Platter')) return 'Kitchen';
+        if (item.includes('Pasta Cruda')) return 'Kitchen';
+        if (item.includes('Roasted Yams')) return 'Kitchen';
+        if (item.includes('Kobe Platter')) return 'Kitchen';
+        if (item.includes('Tortellini with Creamy Pesto')) return 'Kitchen';
+        if (item.includes('Broccoli Cheddar Soup')) return 'Kitchen';
+        if (item.includes('Gourmet Cheese Platter')) return 'Kitchen';
+        if (item.includes('Sausage & Peppers')) return 'Kitchen';
+        if (item.includes('Chili Con Carne')) return 'Kitchen';
+        if (item.includes("Manhattan Clam Chowder")) return 'Kitchen';
+        if (item.includes('Italian Wedding Soup')) return 'Kitchen';
+        if (item.includes('Vegetable Platter')) return 'Produce';
+        if (item.includes('California Roll Platter')) return 'Sushi';
+        if (item.includes('Eggplant Parmesan')) return 'Kitchen';
+        if (item.includes('Eggplant Rollatini')) return 'Kitchen';
+        if (item.includes('Vegetable Lasagna')) return 'Kitchen';
+        if (item.includes('Kale & Broccoli Slaw with Cranberries & Almonds')) return 'Salbar';
+        if (item.includes("Stew's Naked Free Range Turkey")) return 'Kitchen';
+        if (item.includes("Stew's Naked Turkey - Roasted - Medium")) return 'Kitchen';
+        if (item.includes("Stew's Naked Turkey - Roasted - Large")) return 'Kitchen';
+        if (item.includes("Fukuoka Platter")) return 'Kitchen';
+        if (item.includes("Vegetable Lo Mein")) return 'Kitchen';
+
+
     }
 }
 

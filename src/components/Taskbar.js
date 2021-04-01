@@ -4,6 +4,7 @@ import React from 'react';
 // components
 import OrderTable from './OrderTable';
 import LineReport from './LineReport';
+import DueList from './DueList';
 
 // css
 import '../App.css';
@@ -22,6 +23,7 @@ const Taskbar = ({ setComponent, setDate, date, defaultHeaders, filterByDate, na
             </ul>
             <button className="btn btn-primary btn-sm" onClick={() => setDate('')}>Clear Date</button>
             <button className="btn btn-danger btn-sm" onClick={() => { setAppState('Line-Report'); setComponent(<LineReport orders={filterByDate(date)} date={date} navSelection={navSelection} setAppState={e => setAppState(e)} />)}}>Line Report</button>
+            <button className="btn btn-success btn-sm" onClick={() => { setAppState('Line-Report'); setComponent(<DueList orders={filterByDate(date)} date={date} navSelection={navSelection} setAppState={e => setAppState(e)} defaultHeaders={defaultHeaders} setComponent={e => setComponent(e)} />)}}>Due List</button>
         </div>
     )
 }

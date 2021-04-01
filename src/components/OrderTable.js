@@ -2,7 +2,7 @@
 import React from 'react';
 
 // components
-import Order from './Order';
+import ThisOrder from './ThisOrder';
 
 
 const OrderTable = ({ headers, data, store, setAppState, setComponent }) => {
@@ -17,7 +17,7 @@ const OrderTable = ({ headers, data, store, setAppState, setComponent }) => {
                         ))}
                     </tr>
                     {data.map((order, j) => (
-                        <tr key={j} onDoubleClick={() => { setAppState('Order'); setComponent(<Order order={order} setAppState={e => setAppState(e)} />)}}>
+                        <tr key={j} onDoubleClick={() => { setAppState('Order'); setComponent(<ThisOrder data={order} defaultHeaders={headers} setAppState={e => setAppState(e)} setComponent={e => setComponent(e)} />)}}>
                             <td>{order.Order.OrderID}</td>
                             <td>{order.Order.Name}</td>
                             <td>{order.Order.PhoneNumber}</td>

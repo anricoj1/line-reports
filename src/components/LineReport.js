@@ -9,15 +9,18 @@ const LineReport = ({ orders, date, navSelection, setAppState }) => {
     let counts = {}; //init product counts
     let countArr = [];
 
+
     orders.map(order => {
-        if (order.Included !== false) { //iter orders (if included is not false or not)
-            productArr.push(order.Main);
-            order.Options.map(option => productArr.push(option));
-            order.Included.map(included => productArr.push(included));
-        } else {
-            productArr.push(order.Main);
-            order.Options.map(option => productArr.push(option));
-        }
+        order.Included.map(item => {
+            if (item !== false) {
+                order.Main.map(main => productArr.push(main));
+                order.Options.map(option => option.map(nestedOption => productArr.push(nestedOption.Value)));
+                item.map(included => productArr.push(included));
+            } else {
+                order.Main.map(main => productArr.push(main));
+                order.Options.map(option => option.map(nestedOption => productArr.push(nestedOption.Value)));
+            }
+        });
     });
 
     for (let i = 0; i < productArr.length; i++) { //gather quanties of products in array
@@ -25,6 +28,8 @@ const LineReport = ({ orders, date, navSelection, setAppState }) => {
 
         counts[lineitem] = counts[lineitem] ? counts[lineitem] + 1 : 1;
     }
+
+    console.log(counts);
 
     for (const [key, value] of Object.entries(counts)) { //push Line-Item Obj w/ key & value calls (this.getDept())
         countArr.push(new LineItem(value, key))

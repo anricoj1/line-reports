@@ -43,3 +43,11 @@ html, body, #root, .Web, .Mobile {
     background-color: yellow;
 }
 
+.thisOrder {
+    padding: 20px;
+    margin: 40px;
+    border: 1px solid black;
+    width: 100%;
+    position: relative;
+}
+
