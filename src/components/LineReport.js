@@ -1,27 +1,53 @@
 // react
-import React from 'react';
+import React, { useState } from 'react';
 
 // line-item
 import LineItem from './LineItem';
 
 const LineReport = ({ orders, date, navSelection, setAppState }) => {
+    const [selection, setSelection] = useState('');
     let productArr = [];
     let counts = {}; //init product counts
     let countArr = [];
 
+    // set arrays to flatten
+    let options = [];
+    let included = [];
+    let main = [];
 
-    orders.map(order => {
-        order.Included.map(item => {
-            if (item !== false) {
-                order.Main.map(main => productArr.push(main));
-                order.Options.map(option => option.map(nestedOption => productArr.push(nestedOption.Value)));
-                item.map(included => productArr.push(included));
-            } else {
-                order.Main.map(main => productArr.push(main));
-                order.Options.map(option => option.map(nestedOption => productArr.push(nestedOption.Value)));
+    for (let j = 0; j < orders.length; j++) { // options
+        if (orders[j].Options.length > 0) {
+            for (let k = 0; k < orders[j].Options.length; k++) {
+                orders[j].Options[k].forEach(option => {
+                    options.push(option.Value);
+                })
             }
-        });
-    });
+        }
+        
+    }
+
+    for (let l = 0; l < orders.length; l++) { //included
+        if (orders[l].Included.length > 0) {
+            for (let m = 0; m < orders[l].Included.length; m++) {
+                if (orders[l].Included[m] !== false) {
+                    included.push(orders[l].Included[m]);
+                }
+            }
+        }
+    }
+
+    for (let n = 0; n < orders.length; n++) { // main
+        if (orders[n].Main.length > 0) {
+            for (let p = 0; p < orders[n].Included.length; p++) {
+                main.push(orders[n].Main[p]);
+            }
+        }
+    }
+
+
+    productArr = [options, included.flat(1), main].flat(1); //reset productArray
+
+
 
     for (let i = 0; i < productArr.length; i++) { //gather quanties of products in array
         let lineitem = productArr[i];
@@ -29,7 +55,6 @@ const LineReport = ({ orders, date, navSelection, setAppState }) => {
         counts[lineitem] = counts[lineitem] ? counts[lineitem] + 1 : 1;
     }
 
-    console.log(counts);
 
     for (const [key, value] of Object.entries(counts)) { //push Line-Item Obj w/ key & value calls (this.getDept())
         countArr.push(new LineItem(value, key))
@@ -58,10 +83,23 @@ const LineReport = ({ orders, date, navSelection, setAppState }) => {
 
     }
 
+
+    const filterBy = (selection) => {
+        switch(selection) {
+            case "Sides":
+                
+        }
+    }
+
     return (
         <div className="Report">
             <button className="btn btn-danger btn-sm" onClick={() => exportTable()}>Print</button>
-            <button className="btn btn-danger btn-sm" onClick={() => setAppState('Table')}>Back To Table</button>
+            <button className="btn btn-primary btn-sm" onClick={() => setAppState('Table')}>Back To Table</button>
+            <select className="btn btn-success btn-sm text-center" value={selection} onChange={e => { setSelection(e.target.value); filterBy(selection)}}>
+                <option>Sides</option>
+                <option>Main Dishes</option>
+                <option>Included</option>
+            </select>
             <div id="printable">
                 <h2>Line Report For {date} In {navSelection}</h2>
                 <table className="table">
