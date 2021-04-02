@@ -5,10 +5,11 @@ import React, { useState } from 'react';
 import LineItem from './LineItem';
 
 const LineReport = ({ orders, date, navSelection, setAppState }) => {
-    const [selection, setSelection] = useState('');
+    const [selection, setSelection] = useState('All');
     let productArr = [];
     let counts = {}; //init product counts
     let countArr = [];
+    let selections = ['All *Soon*', 'Sides *Soon*', 'Main *Soon*', 'Included *Soon*'];
 
     // set arrays to flatten
     let options = [];
@@ -85,9 +86,18 @@ const LineReport = ({ orders, date, navSelection, setAppState }) => {
 
 
     const filterBy = (selection) => {
-        switch(selection) {
+        switch (selection) {
+            case "All":
+                return productArr;
+
             case "Sides":
-                
+                return productArr = options;
+            
+            case "Included":
+                return productArr = included.flat(1);
+
+            case "Main":
+                return productArr = main;
         }
     }
 
@@ -95,10 +105,10 @@ const LineReport = ({ orders, date, navSelection, setAppState }) => {
         <div className="Report">
             <button className="btn btn-danger btn-sm" onClick={() => exportTable()}>Print</button>
             <button className="btn btn-primary btn-sm" onClick={() => setAppState('Table')}>Back To Table</button>
-            <select className="btn btn-success btn-sm text-center" value={selection} onChange={e => { setSelection(e.target.value); filterBy(selection)}}>
-                <option>Sides</option>
-                <option>Main Dishes</option>
-                <option>Included</option>
+            <select className="btn btn-success btn-sm text-center" value={selection} onChange={e => { setSelection(e.target.value); filterBy(e.target.value)}}>
+                {selections.map(option => (
+                    <option key={option}>{option}</option>
+                ))}
             </select>
             <div id="printable">
                 <h2>Line Report For {date} In {navSelection}</h2>
