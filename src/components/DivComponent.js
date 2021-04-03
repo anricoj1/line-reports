@@ -55,7 +55,7 @@ const DivComponent = ({ orders, defaultHeaders }) => {
                 <Navbar setNavSelection={e => setNavSelection(e)} setAppState={e => setAppState(e)} date={date} />
             </div>
             <div className="taskbar">
-                <Taskbar setComponent={e => setComponent(e)} setDate={e => setDate(e)} date={date} defaultHeaders={defaultHeaders} filterByDate={e => filterByDate(e)} newarr={newarr} navSelection={navSelection} setAppState={e => setAppState(e)} />
+                <Taskbar setComponent={e => setComponent(e)} setDate={e => setDate(e)} date={date} defaultHeaders={defaultHeaders} filterByDate={e => filterByDate(e)} newarr={newarr} navSelection={navSelection} setAppState={e => setAppState(e)} appState={appState} />
             </div>
             <div className="component">
                 {appState === navSelection || appState === date || appState === 'Table' ? <OrderTable headers={defaultHeaders} data={arr} store={navSelection} setAppState={e => setAppState(e)} setComponent={e => setComponent(e)} /> : component}

@@ -1,9 +1,6 @@
 // react
 import React from 'react';
 
-// components
-import OrderTable from './OrderTable';
-import Order from './Order';
 
 // lineitem
 import LineItem from './LineItem';
@@ -12,21 +9,37 @@ import LineItem from './LineItem';
 import '../App.css';
 
 
-const ThisOrder = ({ data, defaultHeaders, setAppState, setComponent }) => {
+const ThisOrder = ({ data, defaultHeaders, setAppState, appState, setComponent }) => {
     let productArr = [];
     let counts = {}; //init product counts
     let countArr = [];
 
-    data.Included.map(item => {
-        if (item !== false) {
-            data.Main.map(main => productArr.push(main));
-            data.Options.map(option => option.map(nestedOption => productArr.push(nestedOption.Value)));
-            item.map(included => productArr.push(included));
-        } else {
-            data.Main.map(main => productArr.push(main));
-            data.Options.map(option => option.map(nestedOption => productArr.push(nestedOption.Value)));
-        }
-    });
+    // set arrays to flatten
+    let options = [];
+    let included = [];
+    let main = [];
+
+    for (let j = 0; j < data.Included.length; j++) { //included
+        if (data.Included[j] !== false) {
+            included.push(data.Included[j]);
+        } 
+    }
+
+    for (let k = 0; k < data.Options.length; k++) { //options
+        if (data.Options[k].length > 0) {
+            data.Options[k].forEach(option => {
+                options.push(option.Value);
+            });
+        } 
+    }
+
+    for (let l = 0; l < data.Main.length; l++) { // main dishes
+        main.push(data.Main[l])
+    }
+
+
+    productArr = [main, options, included.flat(1)].flat(1); // reset product arr to flat array
+    
 
     for (let i = 0; i < productArr.length; i++) {
         let lineitem = productArr[i];
@@ -38,10 +51,9 @@ const ThisOrder = ({ data, defaultHeaders, setAppState, setComponent }) => {
         countArr.push(new LineItem(value, key));
     }
 
-    console.log(productArr);
     return (
         <div className="thisOrder">
-            <button className="btn btn-danger btn-sm" onClick={() => setAppState('Table')}>Back</button>
+            <button className="btn btn-danger btn-sm" onClick={() => setAppState('Table')}>Back To Table</button>
             <table className="table">
                 <thead>
                     <tr>

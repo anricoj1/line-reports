@@ -12,9 +12,9 @@ const LineReport = ({ orders, date, navSelection, setAppState }) => {
     let selections = ['All *Soon*', 'Sides *Soon*', 'Main *Soon*', 'Included *Soon*'];
 
     // set arrays to flatten
-    let options = [];
+    let options = []; // fruit tart is bakery
     let included = [];
-    let main = [];
+    let main = []; // if not family size its 1.5
 
     for (let j = 0; j < orders.length; j++) { // options
         if (orders[j].Options.length > 0) {
@@ -39,7 +39,7 @@ const LineReport = ({ orders, date, navSelection, setAppState }) => {
 
     for (let n = 0; n < orders.length; n++) { // main
         if (orders[n].Main.length > 0) {
-            for (let p = 0; p < orders[n].Included.length; p++) {
+            for (let p = 0; p < orders[n].Main.length; p++) {
                 main.push(orders[n].Main[p]);
             }
         }
@@ -60,6 +60,8 @@ const LineReport = ({ orders, date, navSelection, setAppState }) => {
     for (const [key, value] of Object.entries(counts)) { //push Line-Item Obj w/ key & value calls (this.getDept())
         countArr.push(new LineItem(value, key))
     }
+
+    console.log(countArr);
 
     const exportTable = () => {
         let table = document.getElementById('printable');
