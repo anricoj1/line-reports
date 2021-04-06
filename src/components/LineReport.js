@@ -12,42 +12,27 @@ const LineReport = ({ orders, date, navSelection, setAppState }) => {
     let selections = ['All *Soon*', 'Sides *Soon*', 'Main *Soon*', 'Included *Soon*'];
 
     // set arrays to flatten
-    let options = []; // fruit tart is bakery
     let included = [];
-    let main = []; // if not family size its 1.5
+    let products = [];
 
-    for (let j = 0; j < orders.length; j++) { // options
-        if (orders[j].Options.length > 0) {
-            for (let k = 0; k < orders[j].Options.length; k++) {
-                orders[j].Options[k].forEach(option => {
-                    options.push(option.Value);
-                })
-            }
+    for (let i = 0; i < orders.length; i++) {
+
+        let flat_prod = orders[i].Products.flat(1);
+        let flatten = flat_prod.flat(1);
+
+        for (let j = 0; j < flatten.length; j++) {
+            products.push(flatten[j]);
         }
-        
-    }
 
-    for (let l = 0; l < orders.length; l++) { //included
-        if (orders[l].Included.length > 0) {
-            for (let m = 0; m < orders[l].Included.length; m++) {
-                if (orders[l].Included[m] !== false) {
-                    included.push(orders[l].Included[m]);
-                }
-            }
-        }
-    }
-
-    for (let n = 0; n < orders.length; n++) { // main
-        if (orders[n].Main.length > 0) {
-            for (let p = 0; p < orders[n].Main.length; p++) {
-                main.push(orders[n].Main[p]);
+        for (let k = 0; k < orders[i].Includes.length; k++) {
+            if (orders[i].Includes[k] !== false) {
+                included.push(orders[i].Includes[k]);
             }
         }
     }
 
 
-    productArr = [options, included.flat(1), main].flat(1); //reset productArray
-
+    productArr = [products, included.flat(1)].flat(1)
 
 
     for (let i = 0; i < productArr.length; i++) { //gather quanties of products in array
@@ -60,8 +45,6 @@ const LineReport = ({ orders, date, navSelection, setAppState }) => {
     for (const [key, value] of Object.entries(counts)) { //push Line-Item Obj w/ key & value calls (this.getDept())
         countArr.push(new LineItem(value, key))
     }
-
-    console.log(countArr);
 
     const exportTable = () => {
         let table = document.getElementById('printable');
@@ -87,27 +70,11 @@ const LineReport = ({ orders, date, navSelection, setAppState }) => {
     }
 
 
-    const filterBy = (selection) => {
-        switch (selection) {
-            case "All":
-                return productArr;
-
-            case "Sides":
-                return productArr = options;
-            
-            case "Included":
-                return productArr = included.flat(1);
-
-            case "Main":
-                return productArr = main;
-        }
-    }
-
     return (
         <div className="Report">
             <button className="btn btn-danger btn-sm" onClick={() => exportTable()}>Print</button>
             <button className="btn btn-primary btn-sm" onClick={() => setAppState('Table')}>Back To Table</button>
-            <select className="btn btn-success btn-sm text-center" value={selection} onChange={e => { setSelection(e.target.value); filterBy(e.target.value)}}>
+            <select className="btn btn-success btn-sm text-center" value={selection} onChange={e => setSelection(e.target.value)}>
                 {selections.map(option => (
                     <option key={option}>{option}</option>
                 ))}

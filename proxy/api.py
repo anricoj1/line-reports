@@ -12,10 +12,9 @@ proxy = Flask(__name__)
 def orders():
     with open('orders.json') as response:
         thisdata = json.load(response)
-
+        
     return jsonify(thisdata)
 
 
-
 if __name__ == '__main__':
-    proxy.run(host='0.0.0.0', debug=False)
+    proxy.run(host='0.0.0.0', debug=True)
