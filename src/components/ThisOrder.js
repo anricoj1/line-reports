@@ -43,19 +43,26 @@ const ThisOrder = ({ data, defaultHeaders, setAppState, setComponent }) => {
         countArr.push(new LineItem(value, key));
     }
 
+    const trClass = (status) => {
+        if (status === 'Complete') return 'table-success';
+        if (status === 'Pending') return 'table-warning';
+        if (status === 'Picking' || 'Packing' || 'Staging') return 'table-danger';
+    }
+
     return (
         <div className="thisOrder">
+            <h1 className="text-center">Order Invoice For {data.Order.Name}</h1>
             <button className="btn btn-danger btn-sm" onClick={() => setAppState('Table')}>Back</button>
             <table className="table">
                 <thead>
-                    <tr>
+                    <tr style={{backgroundColor: '#38A745', color: 'white'}}>
                         {defaultHeaders.map((header, i) => (
                             <th key={i}>{header}</th>
                         ))}
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
+                    <tr className={trClass(data.Order.Status)}>
                         <td>{data.Order.OrderID}</td>
                         <td>{data.Order.Name}</td>
                         <td>{data.Order.PhoneNumber}</td>
@@ -70,7 +77,7 @@ const ThisOrder = ({ data, defaultHeaders, setAppState, setComponent }) => {
             </table>
             <table className="table">
                 <thead>
-                    <tr>
+                    <tr style={{backgroundColor: '#38A745', color: 'white'}}>
                         <th>Qty</th>
                         <th>Item</th>
                         <th>Dept</th>

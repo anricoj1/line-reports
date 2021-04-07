@@ -1,6 +1,30 @@
 [
     {
         "Order": {
+            "OrderID": 1629,
+            "Name": "Trisha Tomoda",
+            "StoreName": "Stews Catering Norwalk",
+            "StartTimeWindow": "4/8/2021 4:00 PM",
+            "PhoneNumber": "9179756129",
+            "Status": "Pending",
+            "Total": 100.0,
+            "TotalProductCount": 2,
+            "TimeStamp": "4/7/2021 12:01 PM",
+            "Mode": "Pickup",
+            "DeliveryBy": null,
+            "PickupLocation": "Stew Leonard's Norwalk"
+        },
+        "Products": [
+            "Boneless Chicken Wing Platter ",
+            "Spring Platter "
+        ],
+        "Includes": [
+            false,
+            false
+        ]
+    },
+    {
+        "Order": {
             "OrderID": 1628,
             "Name": "Krzysztof Hejzyk",
             "StoreName": "Stews Catering East Meadow",
@@ -256,8 +280,8 @@
             "StoreName": "Stews Catering Yonkers",
             "StartTimeWindow": "4/7/2021 11:00 AM",
             "PhoneNumber": "9178922530",
-            "Status": "Pending",
-            "Total": 713.11,
+            "Status": "Complete",
+            "Total": 675.0,
             "TotalProductCount": 15,
             "TimeStamp": "4/5/2021 1:31 PM",
             "Mode": "Pickup",
@@ -265,13 +289,35 @@
             "PickupLocation": "Stew Leonard's Yonkers"
         },
         "Products": [
-            "Cookie Platter Assortment - Large ",
-            "Caesar Salad ",
-            "Sesame Chicken ",
-            "Vegetable Fried Rice ",
-            "Penne ala Vodka ",
-            "Sausage & Peppers ",
-            "Chicken Marsala "
+            [
+                "Cookie Platter Assortment - Large ",
+                "Cookie Platter Assortment - Large "
+            ],
+            [
+                "Caesar Salad ",
+                "Caesar Salad "
+            ],
+            [
+                "Sesame Chicken ",
+                "Sesame Chicken "
+            ],
+            [
+                "Vegetable Fried Rice ",
+                "Vegetable Fried Rice ",
+                "Vegetable Fried Rice "
+            ],
+            [
+                "Penne ala Vodka ",
+                "Penne ala Vodka "
+            ],
+            [
+                "Sausage & Peppers ",
+                "Sausage & Peppers "
+            ],
+            [
+                "Chicken Marsala ",
+                "Chicken Marsala "
+            ]
         ],
         "Includes": [
             false,
@@ -318,7 +364,7 @@
             "StoreName": "Stews Catering Yonkers",
             "StartTimeWindow": "4/7/2021 9:00 AM",
             "PhoneNumber": "2032178042",
-            "Status": "Pending",
+            "Status": "Complete",
             "Total": 125.17,
             "TotalProductCount": 3,
             "TimeStamp": "4/5/2021 10:26 AM",
@@ -353,10 +399,19 @@
             "PickupLocation": "Stew Leonard's Norwalk"
         },
         "Products": [
-            "Green Bean Almondine - Family Size ",
-            "Red Roasted Potatoes - Family Size ",
+            [
+                "Green Bean Almondine - Family Size ",
+                "Green Bean Almondine - Family Size "
+            ],
+            [
+                "Red Roasted Potatoes - Family Size ",
+                "Red Roasted Potatoes - Family Size "
+            ],
             "Italian Cookie Platter - 2.5 lbs. ",
-            "Mini Cannoli Platter  ",
+            [
+                "Mini Cannoli Platter  ",
+                "Mini Cannoli Platter  "
+            ],
             "Fukuoka Platter  "
         ],
         "Includes": [
@@ -473,9 +528,14 @@
         "Products": [
             [
                 "Stew's Naked 1lb Shrimp Platter  Jumbo +",
+                [],
+                "Stew's Naked 1lb Shrimp Platter  Jumbo +",
                 []
             ],
-            "Green Bean Almondine - Family Size "
+            [
+                "Green Bean Almondine - Family Size ",
+                "Green Bean Almondine - Family Size "
+            ]
         ],
         "Includes": [
             false,
@@ -655,7 +715,10 @@
             "Stew's Choice Salad    ",
             "Gourmet Cheese Platter ",
             "Swedish Meatball Platter ",
-            "Snowball Rolls - 1 dozen ",
+            [
+                "Snowball Rolls - 1 dozen ",
+                "Snowball Rolls - 1 dozen "
+            ],
             "Country Style Stuffing - Family Size ",
             [
                 "Dinner for 4 - Turkey Breast with Rosemary Sage Salt ",
@@ -1719,7 +1782,10 @@
             "PickupLocation": "Stew Leonard's Paramus"
         },
         "Products": [
-            "Lobster Bisque ",
+            [
+                "Lobster Bisque ",
+                "Lobster Bisque "
+            ],
             "Snowball Rolls - 1 dozen ",
             "Roasted Asparagus - Family Size ",
             "Broccoli Rabe & Roasted Garlic - Family Size ",
@@ -1881,7 +1947,10 @@
                 ]
             ],
             "Organic Roasted Tri-Colored Carrots - Family Size ",
-            "Idaho Mashed Potatoes - Family Size ",
+            [
+                "Idaho Mashed Potatoes - Family Size ",
+                "Idaho Mashed Potatoes - Family Size "
+            ],
             "Country Style Stuffing - Family Size "
         ],
         "Includes": [
@@ -2585,6 +2654,8 @@
         "Products": [
             [
                 "Stew's Naked 1lb Shrimp Platter  Jumbo +",
+                [],
+                "Stew's Naked 1lb Shrimp Platter  Jumbo +",
                 []
             ]
         ],
@@ -2752,7 +2823,10 @@
                 []
             ],
             "Caesar Salad ",
-            "Snowball Rolls - 1 dozen "
+            [
+                "Snowball Rolls - 1 dozen ",
+                "Snowball Rolls - 1 dozen "
+            ]
         ],
         "Includes": [
             false,
@@ -3256,7 +3330,10 @@
         "Products": [
             "Sausage & Peppers ",
             "Roasted Asparagus - Family Size ",
-            "Idaho Mashed Potatoes - Family Size "
+            [
+                "Idaho Mashed Potatoes - Family Size ",
+                "Idaho Mashed Potatoes - Family Size "
+            ]
         ],
         "Includes": [
             false,
@@ -3487,15 +3564,24 @@
         },
         "Products": [
             "Roasted Asparagus - Family Size ",
-            "Oven Roasted Vegetables - Family Size ",
+            [
+                "Oven Roasted Vegetables - Family Size ",
+                "Oven Roasted Vegetables - Family Size "
+            ],
             "Sweet Potato Mousse - Family Size ",
-            "Idaho Mashed Potatoes - Family Size ",
+            [
+                "Idaho Mashed Potatoes - Family Size ",
+                "Idaho Mashed Potatoes - Family Size "
+            ],
             [
                 "Stew's Spiral Cut Ham Half Spiral Ham",
                 []
             ],
             "Grilled Lemon Herb Chicken Breast ",
-            "Dutch Apple Pie - 10 inch "
+            [
+                "Dutch Apple Pie - 10 inch ",
+                "Dutch Apple Pie - 10 inch "
+            ]
         ],
         "Includes": [
             false,
@@ -3627,7 +3713,11 @@
         "Products": [
             "Penne ala Vodka ",
             "Organic Roasted Tri-Colored Carrots - Family Size ",
-            "Idaho Mashed Potatoes - Family Size "
+            [
+                "Idaho Mashed Potatoes - Family Size ",
+                "Idaho Mashed Potatoes - Family Size ",
+                "Idaho Mashed Potatoes - Family Size "
+            ]
         ],
         "Includes": [
             false,
@@ -3743,9 +3833,15 @@
         "Products": [
             "Grilled Balsamic Chicken ",
             "Green Bean Almondine - Family Size ",
-            "Oven Roasted Vegetables - Family Size ",
+            [
+                "Oven Roasted Vegetables - Family Size ",
+                "Oven Roasted Vegetables - Family Size "
+            ],
             "Country Style Stuffing - Family Size ",
-            "Idaho Mashed Potatoes - Family Size "
+            [
+                "Idaho Mashed Potatoes - Family Size ",
+                "Idaho Mashed Potatoes - Family Size "
+            ]
         ],
         "Includes": [
             false,
@@ -3772,6 +3868,8 @@
         },
         "Products": [
             [
+                "Stew's Naked 1lb Shrimp Platter  Jumbo +",
+                [],
                 "Stew's Naked 1lb Shrimp Platter  Jumbo +",
                 []
             ]
@@ -4336,11 +4434,20 @@
                 []
             ],
             "Roasted Asparagus - Family Size ",
-            "Brussel Sprouts with Bacon - Family Size ",
-            "Broccoli Rabe & Roasted Garlic - Family Size ",
+            [
+                "Brussel Sprouts with Bacon - Family Size ",
+                "Brussel Sprouts with Bacon - Family Size "
+            ],
+            [
+                "Broccoli Rabe & Roasted Garlic - Family Size ",
+                "Broccoli Rabe & Roasted Garlic - Family Size "
+            ],
             "Spring Platter ",
             "Fresh Fruit Salad ",
-            "Au Gratin  Potatoes - Family Size "
+            [
+                "Au Gratin  Potatoes - Family Size ",
+                "Au Gratin  Potatoes - Family Size "
+            ]
         ],
         "Includes": [
             false,
@@ -4801,7 +4908,10 @@
             "PickupLocation": "Stew Leonard's East Meadow"
         },
         "Products": [
-            "Organic Roasted Tri-Colored Carrots - Family Size "
+            [
+                "Organic Roasted Tri-Colored Carrots - Family Size ",
+                "Organic Roasted Tri-Colored Carrots - Family Size "
+            ]
         ],
         "Includes": [
             false
@@ -5099,7 +5209,10 @@
             "PickupLocation": "Stew Leonard's Farmingdale"
         },
         "Products": [
-            "Portugese Rolls - 1/2 dozen ",
+            [
+                "Portugese Rolls - 1/2 dozen ",
+                "Portugese Rolls - 1/2 dozen "
+            ],
             "Cookie Platter Assortment - Medium ",
             "Rugelach Platter   ",
             "Roasted Asparagus - Family Size ",
@@ -5365,7 +5478,10 @@
         },
         "Products": [
             "Pub Style Horseradish Sauce   ",
-            "Mrs. Leonard's Homestyle Macaroni and Cheese - Family Size "
+            [
+                "Mrs. Leonard's Homestyle Macaroni and Cheese - Family Size ",
+                "Mrs. Leonard's Homestyle Macaroni and Cheese - Family Size "
+            ]
         ],
         "Includes": [
             false,
@@ -5717,7 +5833,10 @@
         "Products": [
             "Sausage & Peppers ",
             "Tossed Garden Salad     ",
-            "Fresh Fruit Salad "
+            [
+                "Fresh Fruit Salad ",
+                "Fresh Fruit Salad "
+            ]
         ],
         "Includes": [
             false,
@@ -6020,7 +6139,10 @@
                 []
             ],
             "Sweet Potato Mousse - Family Size ",
-            "Idaho Mashed Potatoes - Family Size ",
+            [
+                "Idaho Mashed Potatoes - Family Size ",
+                "Idaho Mashed Potatoes - Family Size "
+            ],
             "Old Fashioned Turkey Gravy ",
             "Roasted Sliced Turkey Breast "
         ],
@@ -6592,7 +6714,10 @@
             "Chicken Piccata ",
             "Vegetable Lasagna ",
             "Penne ala Vodka ",
-            "Roasted Garlic Caprese Flatbread ",
+            [
+                "Roasted Garlic Caprese Flatbread ",
+                "Roasted Garlic Caprese Flatbread "
+            ],
             "Pepperoni Flatbread Pizza "
         ],
         "Includes": [
@@ -6750,7 +6875,10 @@
         "Products": [
             "Roasted Asparagus - Family Size ",
             "Green Bean Almondine - Family Size ",
-            "Au Gratin  Potatoes - Family Size "
+            [
+                "Au Gratin  Potatoes - Family Size ",
+                "Au Gratin  Potatoes - Family Size "
+            ]
         ],
         "Includes": [
             false,
@@ -7917,7 +8045,10 @@
                     "Half Blueberry Pie"
                 ]
             ],
-            "Broccoli Rabe & Roasted Garlic - Family Size ",
+            [
+                "Broccoli Rabe & Roasted Garlic - Family Size ",
+                "Broccoli Rabe & Roasted Garlic - Family Size "
+            ],
             [
                 "Dinner for 4 - Sliced Naked Leg of Lamb ",
                 [
@@ -7926,7 +8057,10 @@
                     "Half Apple Pie"
                 ]
             ],
-            "Idaho Mashed Potatoes - Family Size ",
+            [
+                "Idaho Mashed Potatoes - Family Size ",
+                "Idaho Mashed Potatoes - Family Size "
+            ],
             [
                 "Stew's Naked 1lb Shrimp Platter  Extra Large ",
                 []
@@ -8182,7 +8316,10 @@
             "Oven Roasted Vegetables - Family Size ",
             "Green Bean Almondine - Family Size ",
             "Caesar Salad ",
-            "Au Gratin  Potatoes - Family Size "
+            [
+                "Au Gratin  Potatoes - Family Size ",
+                "Au Gratin  Potatoes - Family Size "
+            ]
         ],
         "Includes": [
             false,
@@ -8305,7 +8442,10 @@
         },
         "Products": [
             "Organic Roasted Tri-Colored Carrots - Family Size ",
-            "Oven Roasted Vegetables - Family Size ",
+            [
+                "Oven Roasted Vegetables - Family Size ",
+                "Oven Roasted Vegetables - Family Size "
+            ],
             "Sweet Potato Mousse - Family Size ",
             [
                 "Caprese Skewers Small 16 Skewers",
@@ -8748,6 +8888,8 @@
         "Products": [
             [
                 "Stew's Naked Filet Mignon Roast  Medium-Rare",
+                [],
+                "Stew's Naked Filet Mignon Roast  Medium-Rare",
                 []
             ]
         ],
@@ -8937,10 +9079,19 @@
         },
         "Products": [
             "Tossed Garden Salad     ",
-            "Au Gratin  Potatoes - Family Size ",
+            [
+                "Au Gratin  Potatoes - Family Size ",
+                "Au Gratin  Potatoes - Family Size "
+            ],
             "Vegetable Lasagna ",
-            "Oven Roasted Vegetables - Family Size ",
-            "Organic Roasted Tri-Colored Carrots - Family Size ",
+            [
+                "Oven Roasted Vegetables - Family Size ",
+                "Oven Roasted Vegetables - Family Size "
+            ],
+            [
+                "Organic Roasted Tri-Colored Carrots - Family Size ",
+                "Organic Roasted Tri-Colored Carrots - Family Size "
+            ],
             "Eggplant Parmesan "
         ],
         "Includes": [
@@ -9178,8 +9329,14 @@
             "PickupLocation": "Stew Leonard's Yonkers"
         },
         "Products": [
-            "Brussel Sprouts with Bacon - Family Size ",
-            "Oven Roasted Vegetables - Family Size ",
+            [
+                "Brussel Sprouts with Bacon - Family Size ",
+                "Brussel Sprouts with Bacon - Family Size "
+            ],
+            [
+                "Oven Roasted Vegetables - Family Size ",
+                "Oven Roasted Vegetables - Family Size "
+            ],
             "Sweet Potato Mousse - Family Size "
         ],
         "Includes": [
@@ -9525,7 +9682,10 @@
                     "Half Blueberry Pie"
                 ]
             ],
-            "Old Fashioned Turkey Gravy ",
+            [
+                "Old Fashioned Turkey Gravy ",
+                "Old Fashioned Turkey Gravy "
+            ],
             "Roasted Sliced Turkey Breast ",
             "Fresh Fruit Platter - Large ",
             "Cheese and Pepperoni Platter ",
@@ -9690,7 +9850,11 @@
                 "Stew's Famous  Filet Mignon Seared +",
                 []
             ],
-            "Idaho Mashed Potatoes - Family Size "
+            [
+                "Idaho Mashed Potatoes - Family Size ",
+                "Idaho Mashed Potatoes - Family Size ",
+                "Idaho Mashed Potatoes - Family Size "
+            ]
         ],
         "Includes": [
             false,
@@ -11288,7 +11452,10 @@
             "PickupLocation": "Stew Leonard's Paramus"
         },
         "Products": [
-            "Red Wine Bordelaise Sauce ",
+            [
+                "Red Wine Bordelaise Sauce ",
+                "Red Wine Bordelaise Sauce "
+            ],
             [
                 "Dinner for 4 - Surf and Turf ",
                 [
@@ -11338,7 +11505,10 @@
             "Primavera Pasta Salad ",
             "Chicken Piccata ",
             "Vegetable Lo Mein ",
-            "Vegetable Minestrone Soup "
+            [
+                "Vegetable Minestrone Soup ",
+                "Vegetable Minestrone Soup "
+            ]
         ],
         "Includes": [
             false,
@@ -11571,7 +11741,10 @@
         },
         "Products": [
             "Caesar Salad ",
-            "Au Gratin  Potatoes - Family Size "
+            [
+                "Au Gratin  Potatoes - Family Size ",
+                "Au Gratin  Potatoes - Family Size "
+            ]
         ],
         "Includes": [
             false,
@@ -12065,7 +12238,10 @@
             "PickupLocation": "Stew Leonard's Yonkers"
         },
         "Products": [
-            "Idaho Mashed Potatoes - Family Size ",
+            [
+                "Idaho Mashed Potatoes - Family Size ",
+                "Idaho Mashed Potatoes - Family Size "
+            ],
             "Stew's Naked Roasted Leg of Lamb "
         ],
         "Includes": [
@@ -12328,7 +12504,10 @@
                 "Crispy Fried Chicken 16 Piece",
                 []
             ],
-            "Snowball Rolls - 1 dozen ",
+            [
+                "Snowball Rolls - 1 dozen ",
+                "Snowball Rolls - 1 dozen "
+            ],
             "Fresh Fruit Salad "
         ],
         "Includes": [
@@ -12357,7 +12536,10 @@
             "Idaho Mashed Potatoes - Family Size ",
             "Poached Salmon - Half Side ",
             "Roasted Sliced Turkey Breast ",
-            "Snowball Rolls - 1 dozen "
+            [
+                "Snowball Rolls - 1 dozen ",
+                "Snowball Rolls - 1 dozen "
+            ]
         ],
         "Includes": [
             false,
@@ -12420,8 +12602,14 @@
             "PickupLocation": "Stew Leonard's Yonkers"
         },
         "Products": [
-            "Tossed Garden Salad     ",
-            "Italian Style Beef Meatballs "
+            [
+                "Tossed Garden Salad     ",
+                "Tossed Garden Salad     "
+            ],
+            [
+                "Italian Style Beef Meatballs ",
+                "Italian Style Beef Meatballs "
+            ]
         ],
         "Includes": [
             false,
@@ -12575,10 +12763,19 @@
             "PickupLocation": "Stew Leonard's Norwalk"
         },
         "Products": [
-            "Oven Roasted Vegetables - Family Size ",
-            "Idaho Mashed Potatoes - Family Size ",
+            [
+                "Oven Roasted Vegetables - Family Size ",
+                "Oven Roasted Vegetables - Family Size "
+            ],
+            [
+                "Idaho Mashed Potatoes - Family Size ",
+                "Idaho Mashed Potatoes - Family Size "
+            ],
             "Sweet Potato Mousse - Family Size ",
-            "Brussel Sprouts with Bacon - Family Size ",
+            [
+                "Brussel Sprouts with Bacon - Family Size ",
+                "Brussel Sprouts with Bacon - Family Size "
+            ],
             [
                 "Stew's Naked 1lb Shrimp Platter  Jumbo +",
                 []
@@ -12870,7 +13067,10 @@
                 "Stew's Naked 1lb Shrimp Platter  Extra Large ",
                 []
             ],
-            "Mini Cannoli Platter  "
+            [
+                "Mini Cannoli Platter  ",
+                "Mini Cannoli Platter  "
+            ]
         ],
         "Includes": [
             false,
@@ -12893,7 +13093,11 @@
             "PickupLocation": "Stew Leonard's Newington"
         },
         "Products": [
-            " Mini Kaiser Roll Assorted Sandwich Platter - Extra Large "
+            [
+                " Mini Kaiser Roll Assorted Sandwich Platter - Extra Large ",
+                " Mini Kaiser Roll Assorted Sandwich Platter - Extra Large ",
+                " Mini Kaiser Roll Assorted Sandwich Platter - Extra Large "
+            ]
         ],
         "Includes": [
             false
@@ -12995,7 +13199,10 @@
             ],
             "Very Berry Cranberry Sauce ",
             "Old Fashioned Turkey Gravy ",
-            "Cranberry Orange Sauce     ",
+            [
+                "Cranberry Orange Sauce     ",
+                "Cranberry Orange Sauce     "
+            ],
             "Mini Cannoli Platter  "
         ],
         "Includes": [
@@ -13061,7 +13268,10 @@
                 "Stew's Famous  Filet Mignon Uncooked - Oven Ready",
                 []
             ],
-            "Snowball Rolls - 1 dozen ",
+            [
+                "Snowball Rolls - 1 dozen ",
+                "Snowball Rolls - 1 dozen "
+            ],
             "Tossed Garden Salad     "
         ],
         "Includes": [
@@ -13145,7 +13355,10 @@
             "Sweet Potato Mousse - Family Size ",
             "Idaho Mashed Potatoes - Family Size ",
             "Organic Roasted Tri-Colored Carrots - Family Size ",
-            "Butternut Apple Soup "
+            [
+                "Butternut Apple Soup ",
+                "Butternut Apple Soup "
+            ]
         ],
         "Includes": [
             false,
@@ -13667,6 +13880,12 @@
                     "Brussels Sprouts w/ Bacon",
                     "Mashed Potatoes",
                     "Half Apple Pie"
+                ],
+                "Dinner for 4 - Surf and Turf ",
+                [
+                    "Brussels Sprouts w/ Bacon",
+                    "Mashed Potatoes",
+                    "Half Apple Pie"
                 ]
             ],
             [
@@ -13801,7 +14020,10 @@
             "PickupLocation": "Stew Leonard's Norwalk"
         },
         "Products": [
-            "Green Bean Almondine - Family Size ",
+            [
+                "Green Bean Almondine - Family Size ",
+                "Green Bean Almondine - Family Size "
+            ],
             "Coleslaw   ",
             "Ham Glaze ",
             "Stew's Naked  Whole Smoked Ham - Spiral Sliced "
@@ -14016,15 +14238,27 @@
                 "Stew's Spiral Cut Ham Half Spiral Ham",
                 []
             ],
-            "Organic Roasted Tri-Colored Carrots - Family Size ",
+            [
+                "Organic Roasted Tri-Colored Carrots - Family Size ",
+                "Organic Roasted Tri-Colored Carrots - Family Size "
+            ],
             "Mrs. Leonard's Homestyle Macaroni and Cheese - Family Size ",
-            "Roasted Asparagus - Family Size ",
+            [
+                "Roasted Asparagus - Family Size ",
+                "Roasted Asparagus - Family Size "
+            ],
             "Triple Brownie Bash Platter     ",
             "Cranberry Orange Sauce     ",
             "Pub Style Horseradish Sauce   ",
-            "Brussel Sprouts with Bacon - Family Size ",
+            [
+                "Brussel Sprouts with Bacon - Family Size ",
+                "Brussel Sprouts with Bacon - Family Size "
+            ],
             "Red Wine Bordelaise Sauce ",
-            "Country Hearth Bread "
+            [
+                "Country Hearth Bread ",
+                "Country Hearth Bread "
+            ]
         ],
         "Includes": [
             false,
@@ -14577,7 +14811,10 @@
             "PickupLocation": "Stew Leonard's Paramus"
         },
         "Products": [
-            "Snowball Rolls - 1 dozen ",
+            [
+                "Snowball Rolls - 1 dozen ",
+                "Snowball Rolls - 1 dozen "
+            ],
             "Triple Brownie Bash Platter     ",
             [
                 "Dinner for 8 - Spiral Ham ",
@@ -14644,7 +14881,10 @@
             "PickupLocation": "Stew Leonard's Paramus"
         },
         "Products": [
-            "Au Gratin  Potatoes - Family Size ",
+            [
+                "Au Gratin  Potatoes - Family Size ",
+                "Au Gratin  Potatoes - Family Size "
+            ],
             "Grilled Salmon ",
             "Stew's Naked Roasted Leg of Lamb ",
             [
@@ -14720,6 +14960,12 @@
         },
         "Products": [
             [
+                "Dinner for 8 - Beef Brisket ",
+                [
+                    "Oven Roasted Vegetables  - Family Size",
+                    "Brussels Sprouts w/ Bacon - Family Size",
+                    "Rugalach Platter"
+                ],
                 "Dinner for 8 - Beef Brisket ",
                 [
                     "Oven Roasted Vegetables  - Family Size",
@@ -15131,7 +15377,10 @@
                 "Stew's Spiral Cut Ham Half Spiral Ham",
                 []
             ],
-            "Mini Kaiser Rolls - 1 dozen ",
+            [
+                "Mini Kaiser Rolls - 1 dozen ",
+                "Mini Kaiser Rolls - 1 dozen "
+            ],
             "Au Gratin  Potatoes - Family Size ",
             "Roasted Asparagus - Family Size ",
             "Vegetable Platter -Large "
@@ -15404,7 +15653,10 @@
                     "Half Cherry Pie"
                 ]
             ],
-            "Lobster Bisque ",
+            [
+                "Lobster Bisque ",
+                "Lobster Bisque "
+            ],
             [
                 "Stew's Naked 1lb Shrimp Platter  Extra Large ",
                 []
@@ -15886,8 +16138,14 @@
         },
         "Products": [
             "Mrs. Leonard's Homestyle Macaroni and Cheese - Family Size ",
-            "Roasted Garlic Caprese Flatbread ",
-            "Pepperoni Flatbread Pizza ",
+            [
+                "Roasted Garlic Caprese Flatbread ",
+                "Roasted Garlic Caprese Flatbread "
+            ],
+            [
+                "Pepperoni Flatbread Pizza ",
+                "Pepperoni Flatbread Pizza "
+            ],
             "Fresh Fruit Platter - Extra Large "
         ],
         "Includes": [
@@ -16413,7 +16671,10 @@
             "PickupLocation": "Stew Leonard's Farmingdale"
         },
         "Products": [
-            "Snowball Rolls - 1 dozen ",
+            [
+                "Snowball Rolls - 1 dozen ",
+                "Snowball Rolls - 1 dozen "
+            ],
             "Triple Brownie Bash Platter     ",
             "Brussel Sprouts with Bacon - Family Size ",
             "Idaho Mashed Potatoes - Family Size "
@@ -16444,7 +16705,10 @@
             "Mini Cannoli Platter  ",
             "Stew's Naked Roasted Leg of Lamb ",
             "Oven Roasted Vegetables - Family Size ",
-            "Idaho Mashed Potatoes - Family Size ",
+            [
+                "Idaho Mashed Potatoes - Family Size ",
+                "Idaho Mashed Potatoes - Family Size "
+            ],
             "Country Style Stuffing - Family Size "
         ],
         "Includes": [
@@ -16476,7 +16740,10 @@
             "Mrs. Leonard's Homestyle Macaroni and Cheese - Family Size ",
             "Old Fashioned Turkey Gravy ",
             "Cranberry Orange Sauce     ",
-            "Au Gratin  Potatoes - Family Size ",
+            [
+                "Au Gratin  Potatoes - Family Size ",
+                "Au Gratin  Potatoes - Family Size "
+            ],
             "Roasted Sliced Turkey Breast "
         ],
         "Includes": [
@@ -16823,6 +17090,8 @@
         "Products": [
             [
                 "Stew's Naked Filet Mignon Roast  Medium",
+                [],
+                "Stew's Naked Filet Mignon Roast  Medium",
                 []
             ],
             "Grilled Salmon "
@@ -16955,7 +17224,10 @@
             "Organic Roasted Tri-Colored Carrots - Family Size ",
             "Snowball Rolls - 1 dozen ",
             "Red Wine Bordelaise Sauce ",
-            "Au Gratin  Potatoes - Family Size ",
+            [
+                "Au Gratin  Potatoes - Family Size ",
+                "Au Gratin  Potatoes - Family Size "
+            ],
             "Stew's Naked Roasted Leg of Lamb "
         ],
         "Includes": [
@@ -16985,7 +17257,10 @@
         "Products": [
             "Country Hearth Bread ",
             "\tCiabatta Rolls ",
-            "Red Wine Bordelaise Sauce ",
+            [
+                "Red Wine Bordelaise Sauce ",
+                "Red Wine Bordelaise Sauce "
+            ],
             [
                 "Stew's Naked 1lb Shrimp Platter  Extra Large ",
                 []
@@ -17585,8 +17860,14 @@
             ],
             "Sweet & Sour Meatballs ",
             "Sausage Stuffed Loaf - Whole ",
-            "Pepperoni Stuffed Loaf - Half ",
-            "Chicken Parmesan Stuffed Loaf - Whole ",
+            [
+                "Pepperoni Stuffed Loaf - Half ",
+                "Pepperoni Stuffed Loaf - Half "
+            ],
+            [
+                "Chicken Parmesan Stuffed Loaf - Whole ",
+                "Chicken Parmesan Stuffed Loaf - Whole "
+            ],
             "Penne ala Vodka ",
             "3 Foot Grinder - 1/2 American 1/2 Italian  "
         ],
@@ -17726,7 +18007,10 @@
         },
         "Products": [
             "Roasted Asparagus - Family Size ",
-            "Mrs. Leonard's Homestyle Macaroni and Cheese - Family Size ",
+            [
+                "Mrs. Leonard's Homestyle Macaroni and Cheese - Family Size ",
+                "Mrs. Leonard's Homestyle Macaroni and Cheese - Family Size "
+            ],
             "Brussel Sprouts with Bacon - Family Size "
         ],
         "Includes": [
@@ -17751,7 +18035,10 @@
             "PickupLocation": "Stew Leonard's Danbury"
         },
         "Products": [
-            "Idaho Mashed Potatoes - Family Size ",
+            [
+                "Idaho Mashed Potatoes - Family Size ",
+                "Idaho Mashed Potatoes - Family Size "
+            ],
             "Mrs. Leonard's Homestyle Macaroni and Cheese - Family Size ",
             "Green Bean Almondine - Family Size "
         ],
@@ -18581,7 +18868,10 @@
             "PickupLocation": "Stew Leonard's Norwalk"
         },
         "Products": [
-            "Red Roasted Potatoes - Family Size ",
+            [
+                "Red Roasted Potatoes - Family Size ",
+                "Red Roasted Potatoes - Family Size "
+            ],
             "Fresh Fruit Salad "
         ],
         "Includes": [
@@ -18774,7 +19064,10 @@
             "Triple Brownie Bash Platter     ",
             "Mini Cannoli Platter  ",
             "Rugelach Platter   ",
-            "Fresh Fruit Tart  ",
+            [
+                "Fresh Fruit Tart  ",
+                "Fresh Fruit Tart  "
+            ],
             "Coconut Custard Pie - 10 inch ",
             "Eggplant Rollatini "
         ],
@@ -19175,7 +19468,10 @@
             "PickupLocation": "Stew Leonard's Yonkers"
         },
         "Products": [
-            "Vegetable Fried Rice "
+            [
+                "Vegetable Fried Rice ",
+                "Vegetable Fried Rice "
+            ]
         ],
         "Includes": [
             false
@@ -19347,6 +19643,8 @@
         "Products": [
             [
                 "Crispy Fried Chicken 48 Piece +",
+                [],
+                "Crispy Fried Chicken 48 Piece +",
                 []
             ]
         ],
@@ -19445,7 +19743,10 @@
             "PickupLocation": "Stew Leonard's East Meadow"
         },
         "Products": [
-            "Idaho Mashed Potatoes - Family Size ",
+            [
+                "Idaho Mashed Potatoes - Family Size ",
+                "Idaho Mashed Potatoes - Family Size "
+            ],
             [
                 "Stew's Spiral Cut Ham Half Spiral Ham",
                 []
@@ -19481,7 +19782,10 @@
         "Products": [
             "Italian Cookie Platter - 1.5 lbs. ",
             "Triple Brownie Bash Platter     ",
-            "Kitchen Bar Special Requirements "
+            [
+                "Kitchen Bar Special Requirements ",
+                "Kitchen Bar Special Requirements "
+            ]
         ],
         "Includes": [
             false,
@@ -19609,8 +19913,14 @@
                 []
             ],
             "Sweet Potato Mousse - Family Size ",
-            "Brussel Sprouts with Bacon - Family Size ",
-            "Organic Roasted Tri-Colored Carrots - Family Size ",
+            [
+                "Brussel Sprouts with Bacon - Family Size ",
+                "Brussel Sprouts with Bacon - Family Size "
+            ],
+            [
+                "Organic Roasted Tri-Colored Carrots - Family Size ",
+                "Organic Roasted Tri-Colored Carrots - Family Size "
+            ],
             [
                 "Stew's Spiral Cut Ham Half Spiral Ham",
                 []
@@ -19738,7 +20048,10 @@
         },
         "Products": [
             "Roasted Asparagus - Family Size ",
-            "Mrs. Leonard's Homestyle Macaroni and Cheese - Family Size ",
+            [
+                "Mrs. Leonard's Homestyle Macaroni and Cheese - Family Size ",
+                "Mrs. Leonard's Homestyle Macaroni and Cheese - Family Size "
+            ],
             "Idaho Mashed Potatoes - Family Size ",
             [
                 "Stew's Spiral Cut Ham Half Spiral Ham",
@@ -19748,7 +20061,10 @@
             "Dutch Apple Pie - 10 inch ",
             "Cheese and Pepperoni Platter ",
             "Sweet & Sour Meatballs ",
-            "Snowball Rolls - 1 dozen ",
+            [
+                "Snowball Rolls - 1 dozen ",
+                "Snowball Rolls - 1 dozen "
+            ],
             "Triple Brownie Bash Platter     "
         ],
         "Includes": [
@@ -20431,7 +20747,10 @@
             "PickupLocation": "Stew Leonard's East Meadow"
         },
         "Products": [
-            "Sweet Potato Mousse - Family Size ",
+            [
+                "Sweet Potato Mousse - Family Size ",
+                "Sweet Potato Mousse - Family Size "
+            ],
             "Idaho Mashed Potatoes - Family Size ",
             [
                 "Stew's Spiral Cut Ham Half Spiral Ham",
@@ -20599,7 +20918,10 @@
         "Products": [
             "Broccoli Rabe & Roasted Garlic - Family Size ",
             "Sweet Potato Mousse - Family Size ",
-            "Idaho Mashed Potatoes - Family Size "
+            [
+                "Idaho Mashed Potatoes - Family Size ",
+                "Idaho Mashed Potatoes - Family Size "
+            ]
         ],
         "Includes": [
             false,
@@ -20837,7 +21159,10 @@
             "PickupLocation": "Stew Leonard's Norwalk"
         },
         "Products": [
-            "Idaho Mashed Potatoes - Family Size "
+            [
+                "Idaho Mashed Potatoes - Family Size ",
+                "Idaho Mashed Potatoes - Family Size "
+            ]
         ],
         "Includes": [
             false
@@ -20994,7 +21319,10 @@
             "PickupLocation": "Stew Leonard's Norwalk"
         },
         "Products": [
-            "Au Gratin  Potatoes - Family Size "
+            [
+                "Au Gratin  Potatoes - Family Size ",
+                "Au Gratin  Potatoes - Family Size "
+            ]
         ],
         "Includes": [
             false
@@ -21409,7 +21737,10 @@
             "PickupLocation": "Stew Leonard's Yonkers"
         },
         "Products": [
-            "Snowball Rolls - 1 dozen ",
+            [
+                "Snowball Rolls - 1 dozen ",
+                "Snowball Rolls - 1 dozen "
+            ],
             "Penne ala Vodka ",
             "Country Style Stuffing - Family Size ",
             "Idaho Mashed Potatoes - Family Size ",
@@ -21902,8 +22233,14 @@
             "Apple Pie - 10 inch ",
             "Mini Cannoli Platter  ",
             "Roasted Asparagus - Family Size ",
-            "Mrs. Leonard's Homestyle Macaroni and Cheese - Family Size ",
-            "Idaho Mashed Potatoes - Family Size ",
+            [
+                "Mrs. Leonard's Homestyle Macaroni and Cheese - Family Size ",
+                "Mrs. Leonard's Homestyle Macaroni and Cheese - Family Size "
+            ],
+            [
+                "Idaho Mashed Potatoes - Family Size ",
+                "Idaho Mashed Potatoes - Family Size "
+            ],
             "Stew's Naked  Whole Smoked Ham - Spiral Sliced "
         ],
         "Includes": [
@@ -22393,8 +22730,14 @@
             "PickupLocation": "Stew Leonard's Newington"
         },
         "Products": [
-            "Idaho Mashed Potatoes - Family Size ",
-            "Mrs. Leonard's Homestyle Macaroni and Cheese - Family Size "
+            [
+                "Idaho Mashed Potatoes - Family Size ",
+                "Idaho Mashed Potatoes - Family Size "
+            ],
+            [
+                "Mrs. Leonard's Homestyle Macaroni and Cheese - Family Size ",
+                "Mrs. Leonard's Homestyle Macaroni and Cheese - Family Size "
+            ]
         ],
         "Includes": [
             false,
@@ -22513,7 +22856,10 @@
         },
         "Products": [
             "Oven Roasted Vegetables - Family Size ",
-            "Au Gratin  Potatoes - Family Size "
+            [
+                "Au Gratin  Potatoes - Family Size ",
+                "Au Gratin  Potatoes - Family Size "
+            ]
         ],
         "Includes": [
             false,
@@ -23280,7 +23626,10 @@
             "Country Style Stuffing - Family Size ",
             "Fresh Fruit Tart  ",
             "Kale & Broccoli Slaw with Cranberries & Almonds ",
-            "Fresh Fruit Salad ",
+            [
+                "Fresh Fruit Salad ",
+                "Fresh Fruit Salad "
+            ],
             "Penne Pasta Salad with Grilled Vegetables ",
             " Fresh Mozzarella, Basil and Tomato Platter ",
             "Cranberry Orange Sauce     ",
@@ -23347,7 +23696,10 @@
                 "Stew's Spiral Cut Ham Whole Spiral Ham +",
                 []
             ],
-            "Snowball Rolls - 1 dozen ",
+            [
+                "Snowball Rolls - 1 dozen ",
+                "Snowball Rolls - 1 dozen "
+            ],
             "Roasted Sliced Turkey Breast "
         ],
         "Includes": [
@@ -23423,7 +23775,10 @@
             ],
             "Mini Cannoli Platter  ",
             "Dutch Apple Pie - 10 inch ",
-            "Butternut Apple Soup ",
+            [
+                "Butternut Apple Soup ",
+                "Butternut Apple Soup "
+            ],
             "Ham Glaze "
         ],
         "Includes": [
@@ -23573,7 +23928,10 @@
         "Products": [
             "Sweet Potato Mousse - Family Size ",
             "Green Bean Almondine - Family Size ",
-            "Idaho Mashed Potatoes - Family Size ",
+            [
+                "Idaho Mashed Potatoes - Family Size ",
+                "Idaho Mashed Potatoes - Family Size "
+            ],
             "Mini Cannoli Platter  "
         ],
         "Includes": [
@@ -23760,7 +24118,10 @@
         },
         "Products": [
             "Roasted Asparagus - Family Size ",
-            "Idaho Mashed Potatoes - Family Size ",
+            [
+                "Idaho Mashed Potatoes - Family Size ",
+                "Idaho Mashed Potatoes - Family Size "
+            ],
             [
                 "Stew's Naked Free Range Turkey ",
                 [
@@ -24486,7 +24847,10 @@
             "PickupLocation": "Stew Leonard's Newington"
         },
         "Products": [
-            "Sweet Potato Mousse - Family Size ",
+            [
+                "Sweet Potato Mousse - Family Size ",
+                "Sweet Potato Mousse - Family Size "
+            ],
             "Organic Roasted Tri-Colored Carrots - Family Size ",
             "Pasta Cruda     ",
             "Chicken Piccata ",
@@ -24640,8 +25004,14 @@
             "Vegetable Platter - Extra Large ",
             "Roasted Asparagus - Family Size ",
             "Green Bean Almondine - Family Size ",
-            "Idaho Mashed Potatoes - Family Size ",
-            "Mrs. Leonard's Homestyle Macaroni and Cheese - Family Size "
+            [
+                "Idaho Mashed Potatoes - Family Size ",
+                "Idaho Mashed Potatoes - Family Size "
+            ],
+            [
+                "Mrs. Leonard's Homestyle Macaroni and Cheese - Family Size ",
+                "Mrs. Leonard's Homestyle Macaroni and Cheese - Family Size "
+            ]
         ],
         "Includes": [
             false,
@@ -24805,8 +25175,14 @@
                 ]
             ],
             "Fresh Fruit Tart  ",
-            "New England Clam Chowder ",
-            "Butternut Apple Soup "
+            [
+                "New England Clam Chowder ",
+                "New England Clam Chowder "
+            ],
+            [
+                "Butternut Apple Soup ",
+                "Butternut Apple Soup "
+            ]
         ],
         "Includes": [
             false,
@@ -24940,7 +25316,11 @@
         },
         "Products": [
             "Mrs. Leonard's Homestyle Macaroni and Cheese - Family Size ",
-            "Idaho Mashed Potatoes - Family Size ",
+            [
+                "Idaho Mashed Potatoes - Family Size ",
+                "Idaho Mashed Potatoes - Family Size ",
+                "Idaho Mashed Potatoes - Family Size "
+            ],
             [
                 "Dinner for 8 - Spiral Ham ",
                 [
@@ -24949,7 +25329,10 @@
                     "Blueberry Pie"
                 ]
             ],
-            "Snowball Rolls - 1 dozen ",
+            [
+                "Snowball Rolls - 1 dozen ",
+                "Snowball Rolls - 1 dozen "
+            ],
             "Dutch Apple Pie - 10 inch ",
             "Fresh Fruit Platter - Extra Large ",
             "Mini Cannoli Platter  ",
@@ -25278,8 +25661,14 @@
             "PickupLocation": "Stew Leonard's Farmingdale"
         },
         "Products": [
-            "Mrs. Leonard's Homestyle Macaroni and Cheese - Family Size ",
-            "Idaho Mashed Potatoes - Family Size "
+            [
+                "Mrs. Leonard's Homestyle Macaroni and Cheese - Family Size ",
+                "Mrs. Leonard's Homestyle Macaroni and Cheese - Family Size "
+            ],
+            [
+                "Idaho Mashed Potatoes - Family Size ",
+                "Idaho Mashed Potatoes - Family Size "
+            ]
         ],
         "Includes": [
             false,
@@ -26305,6 +26694,8 @@
             "Fresh Fruit Tart  ",
             [
                 "Stew's Naked 1lb Shrimp Platter  Extra Large ",
+                [],
+                "Stew's Naked 1lb Shrimp Platter  Extra Large ",
                 []
             ]
         ],
@@ -26603,7 +26994,10 @@
             "Italian Cookie Platter - 2.5 lbs. ",
             "Vegetable Platter - Extra Large ",
             "Fresh Fruit Platter - Extra Large ",
-            "Cheese and Pepperoni Platter ",
+            [
+                "Cheese and Pepperoni Platter ",
+                "Cheese and Pepperoni Platter "
+            ],
             "Mini Kaiser Roll Assorted Sandwich Platter - Large "
         ],
         "Includes": [
@@ -26636,8 +27030,14 @@
         "Products": [
             "Oven Roasted Vegetables - Family Size ",
             "Roasted Asparagus - Family Size ",
-            "Green Bean Almondine - Family Size ",
-            "Mrs. Leonard's Homestyle Macaroni and Cheese - Family Size "
+            [
+                "Green Bean Almondine - Family Size ",
+                "Green Bean Almondine - Family Size "
+            ],
+            [
+                "Mrs. Leonard's Homestyle Macaroni and Cheese - Family Size ",
+                "Mrs. Leonard's Homestyle Macaroni and Cheese - Family Size "
+            ]
         ],
         "Includes": [
             false,
@@ -26749,7 +27149,10 @@
                     "Apple Pie"
                 ]
             ],
-            "Snowball Rolls - 1 dozen ",
+            [
+                "Snowball Rolls - 1 dozen ",
+                "Snowball Rolls - 1 dozen "
+            ],
             "Ham Glaze "
         ],
         "Includes": [
@@ -27046,6 +27449,8 @@
             "Idaho Mashed Potatoes - Family Size ",
             [
                 "Stew's Naked 1lb Shrimp Platter  Extra Large ",
+                [],
+                "Stew's Naked 1lb Shrimp Platter  Extra Large ",
                 []
             ],
             [
@@ -27078,7 +27483,10 @@
         },
         "Products": [
             "Vegetable Minestrone Soup ",
-            "Broccoli Cheddar Soup ",
+            [
+                "Broccoli Cheddar Soup ",
+                "Broccoli Cheddar Soup "
+            ],
             "Boneless Chicken Wing Platter ",
             [
                 "Crispy Fried Chicken 16 Piece",
@@ -28508,8 +28916,14 @@
             "PickupLocation": "Stew Leonard's Danbury"
         },
         "Products": [
-            "Oven Roasted Vegetables - Family Size ",
-            "Idaho Mashed Potatoes - Family Size ",
+            [
+                "Oven Roasted Vegetables - Family Size ",
+                "Oven Roasted Vegetables - Family Size "
+            ],
+            [
+                "Idaho Mashed Potatoes - Family Size ",
+                "Idaho Mashed Potatoes - Family Size "
+            ],
             [
                 "Stew's Famous  Filet Mignon Uncooked - Oven Ready",
                 []
@@ -28615,7 +29029,10 @@
                     "Cherry Pie"
                 ]
             ],
-            "Ham Glaze "
+            [
+                "Ham Glaze ",
+                "Ham Glaze "
+            ]
         ],
         "Includes": [
             [
@@ -29087,7 +29504,11 @@
             "PickupLocation": "Stew Leonard's Paramus"
         },
         "Products": [
-            "Idaho Mashed Potatoes - Family Size "
+            [
+                "Idaho Mashed Potatoes - Family Size ",
+                "Idaho Mashed Potatoes - Family Size ",
+                "Idaho Mashed Potatoes - Family Size "
+            ]
         ],
         "Includes": [
             false
@@ -29232,7 +29653,10 @@
             "PickupLocation": "Stew Leonard's Norwalk"
         },
         "Products": [
-            "Chicken Wingette Platter "
+            [
+                "Chicken Wingette Platter ",
+                "Chicken Wingette Platter "
+            ]
         ],
         "Includes": [
             false
@@ -29484,6 +29908,12 @@
         },
         "Products": [
             [
+                "Dinner for 4 - Surf and Turf ",
+                [
+                    "Mashed Potatoes",
+                    "Broccoli Rabe w/Roasted Garlic",
+                    "Half Apple Pie"
+                ],
                 "Dinner for 4 - Surf and Turf ",
                 [
                     "Mashed Potatoes",
@@ -29970,7 +30400,10 @@
             "Roasted Asparagus - Family Size ",
             "Idaho Mashed Potatoes - Family Size ",
             "Mrs. Leonard's Homestyle Macaroni and Cheese - Family Size ",
-            "Snowball Rolls - 1 dozen "
+            [
+                "Snowball Rolls - 1 dozen ",
+                "Snowball Rolls - 1 dozen "
+            ]
         ],
         "Includes": [
             false,
@@ -30226,13 +30659,24 @@
             "Green Bean Almondine - Family Size ",
             [
                 "Stew's Naked 1lb Shrimp Platter  Extra Large ",
+                [],
+                "Stew's Naked 1lb Shrimp Platter  Extra Large ",
                 []
             ],
             "Brussel Sprouts with Bacon - Family Size ",
             "Organic Roasted Tri-Colored Carrots - Family Size ",
-            "Red Roasted Potatoes - Family Size ",
-            "Cheese and Pepperoni Platter ",
-            "Snowball Rolls - 1 dozen "
+            [
+                "Red Roasted Potatoes - Family Size ",
+                "Red Roasted Potatoes - Family Size "
+            ],
+            [
+                "Cheese and Pepperoni Platter ",
+                "Cheese and Pepperoni Platter "
+            ],
+            [
+                "Snowball Rolls - 1 dozen ",
+                "Snowball Rolls - 1 dozen "
+            ]
         ],
         "Includes": [
             false,
@@ -30729,7 +31173,10 @@
             "Mrs. Leonard's Homestyle Macaroni and Cheese - Family Size ",
             "Coconut Custard Pie - 10 inch ",
             "Dutch Apple Pie - 10 inch ",
-            "Snowball Rolls - 1 dozen ",
+            [
+                "Snowball Rolls - 1 dozen ",
+                "Snowball Rolls - 1 dozen "
+            ],
             "Old Fashioned Turkey Gravy ",
             "Vegetable Platter - Extra Large ",
             "Roasted Sliced Turkey Breast ",
@@ -31142,9 +31589,18 @@
         },
         "Products": [
             "Roasted Asparagus - Family Size ",
-            "Idaho Mashed Potatoes - Family Size ",
-            "Oven Roasted Vegetables - Family Size ",
-            "Mrs. Leonard's Homestyle Macaroni and Cheese - Family Size ",
+            [
+                "Idaho Mashed Potatoes - Family Size ",
+                "Idaho Mashed Potatoes - Family Size "
+            ],
+            [
+                "Oven Roasted Vegetables - Family Size ",
+                "Oven Roasted Vegetables - Family Size "
+            ],
+            [
+                "Mrs. Leonard's Homestyle Macaroni and Cheese - Family Size ",
+                "Mrs. Leonard's Homestyle Macaroni and Cheese - Family Size "
+            ],
             [
                 "Stew's Spiral Cut Ham Half Spiral Ham",
                 []
@@ -31256,11 +31712,17 @@
             "PickupLocation": "Stew Leonard's Yonkers"
         },
         "Products": [
-            "French Baguette ",
+            [
+                "French Baguette ",
+                "French Baguette "
+            ],
             "Fresh Fruit Tart  ",
             "Fresh Fruit Salad ",
             "Roasted Asparagus - Family Size ",
-            "Idaho Mashed Potatoes - Family Size "
+            [
+                "Idaho Mashed Potatoes - Family Size ",
+                "Idaho Mashed Potatoes - Family Size "
+            ]
         ],
         "Includes": [
             false,
@@ -31329,7 +31791,10 @@
                 "Stew's Spiral Cut Ham Half Spiral Ham",
                 []
             ],
-            "Snowball Rolls - 1 dozen ",
+            [
+                "Snowball Rolls - 1 dozen ",
+                "Snowball Rolls - 1 dozen "
+            ],
             "Tossed Garden Salad     ",
             "Chicken Parmesan "
         ],
@@ -31388,12 +31853,24 @@
             "PickupLocation": "Stew Leonard's Yonkers"
         },
         "Products": [
-            "Green Bean Almondine - Family Size ",
+            [
+                "Green Bean Almondine - Family Size ",
+                "Green Bean Almondine - Family Size "
+            ],
             "Stew's Naked  Whole Smoked Ham - Spiral Sliced ",
             "Bacon Pecan Ham Glaze ",
-            "Organic Roasted Tri-Colored Carrots - Family Size ",
-            "Brussel Sprouts with Bacon - Family Size ",
-            "Sweet Potato Mousse - Family Size "
+            [
+                "Organic Roasted Tri-Colored Carrots - Family Size ",
+                "Organic Roasted Tri-Colored Carrots - Family Size "
+            ],
+            [
+                "Brussel Sprouts with Bacon - Family Size ",
+                "Brussel Sprouts with Bacon - Family Size "
+            ],
+            [
+                "Sweet Potato Mousse - Family Size ",
+                "Sweet Potato Mousse - Family Size "
+            ]
         ],
         "Includes": [
             false,
@@ -32056,7 +32533,10 @@
                 "Stew's Naked 1lb Shrimp Platter  Extra Large ",
                 []
             ],
-            "Lobster Bisque ",
+            [
+                "Lobster Bisque ",
+                "Lobster Bisque "
+            ],
             [
                 "Dinner for 4 - Surf and Turf ",
                 [
@@ -32117,16 +32597,24 @@
         "Products": [
             [
                 "Stew's Naked 1lb Shrimp Platter  Jumbo +",
+                [],
+                "Stew's Naked 1lb Shrimp Platter  Jumbo +",
                 []
             ],
             "Boneless Chicken Wing Platter ",
             "Fresh Fruit Salad ",
             "Red Potato Salad ",
             " Mini Kaiser Roll Assorted Sandwich Platter - Extra Large ",
-            "Sausage & Peppers ",
+            [
+                "Sausage & Peppers ",
+                "Sausage & Peppers "
+            ],
             "Sausage Stuffed Loaf - Whole ",
             "Chicken Parmesan Stuffed Loaf - Whole ",
-            "Pepperoni Stuffed Loaf - Half ",
+            [
+                "Pepperoni Stuffed Loaf - Half ",
+                "Pepperoni Stuffed Loaf - Half "
+            ],
             "Cheese and Pepperoni Platter ",
             "Triple Brownie Bash Platter     "
         ],
@@ -32328,7 +32816,10 @@
             "PickupLocation": "Stew Leonard's Newington"
         },
         "Products": [
-            "Mrs. Leonard's Homestyle Macaroni and Cheese - Family Size ",
+            [
+                "Mrs. Leonard's Homestyle Macaroni and Cheese - Family Size ",
+                "Mrs. Leonard's Homestyle Macaroni and Cheese - Family Size "
+            ],
             [
                 "Stew's Spiral Cut Ham Whole Spiral Ham +",
                 []
@@ -32336,8 +32827,16 @@
             "Fresh Fruit Platter - Extra Large ",
             "Sweet & Sour Meatballs ",
             "Vegetable Platter - Extra Large ",
-            "Snowball Rolls - 1 dozen ",
-            "Au Gratin  Potatoes - Family Size "
+            [
+                "Snowball Rolls - 1 dozen ",
+                "Snowball Rolls - 1 dozen ",
+                "Snowball Rolls - 1 dozen "
+            ],
+            [
+                "Au Gratin  Potatoes - Family Size ",
+                "Au Gratin  Potatoes - Family Size ",
+                "Au Gratin  Potatoes - Family Size "
+            ]
         ],
         "Includes": [
             false,
@@ -32403,7 +32902,10 @@
                 ]
             ],
             "Idaho Mashed Potatoes - Family Size ",
-            "Old Fashioned Turkey Gravy ",
+            [
+                "Old Fashioned Turkey Gravy ",
+                "Old Fashioned Turkey Gravy "
+            ],
             "Red Wine Bordelaise Sauce "
         ],
         "Includes": [
@@ -33050,7 +33552,10 @@
                     "Half Cherry Pie"
                 ]
             ],
-            "Idaho Mashed Potatoes - Family Size "
+            [
+                "Idaho Mashed Potatoes - Family Size ",
+                "Idaho Mashed Potatoes - Family Size "
+            ]
         ],
         "Includes": [
             false,
@@ -33951,7 +34456,10 @@
         },
         "Products": [
             "Broccoli Rabe & Roasted Garlic - Family Size ",
-            "Idaho Mashed Potatoes - Family Size ",
+            [
+                "Idaho Mashed Potatoes - Family Size ",
+                "Idaho Mashed Potatoes - Family Size "
+            ],
             [
                 "Stew's Spiral Cut Ham Half Spiral Ham",
                 []
@@ -34160,6 +34668,8 @@
         },
         "Products": [
             [
+                "Stew's Naked 1lb Shrimp Platter  Extra Large ",
+                [],
                 "Stew's Naked 1lb Shrimp Platter  Extra Large ",
                 []
             ],
@@ -35500,7 +36010,10 @@
                 []
             ],
             "Roasted Asparagus - Family Size ",
-            "Vegetable Minestrone Soup ",
+            [
+                "Vegetable Minestrone Soup ",
+                "Vegetable Minestrone Soup "
+            ],
             "Fresh Fruit Salad "
         ],
         "Includes": [
@@ -35760,6 +36273,8 @@
         },
         "Products": [
             [
+                "Stew's Naked 1lb Shrimp Platter  Extra Large ",
+                [],
                 "Stew's Naked 1lb Shrimp Platter  Extra Large ",
                 []
             ],
@@ -36032,7 +36547,10 @@
             "Mini Kaiser Rolls - 1 dozen ",
             "Snowball Rolls - 1 dozen ",
             "Chicken Parmesan Stuffed Loaf - Whole ",
-            "Red Wine Bordelaise Sauce ",
+            [
+                "Red Wine Bordelaise Sauce ",
+                "Red Wine Bordelaise Sauce "
+            ],
             "Ham Glaze "
         ],
         "Includes": [
@@ -36170,7 +36688,10 @@
             "PickupLocation": "Stew Leonard's Danbury"
         },
         "Products": [
-            "Idaho Mashed Potatoes - Family Size ",
+            [
+                "Idaho Mashed Potatoes - Family Size ",
+                "Idaho Mashed Potatoes - Family Size "
+            ],
             "Mrs. Leonard's Homestyle Macaroni and Cheese - Family Size ",
             "Snowball Rolls - 1 dozen ",
             "Stuffed Mushroom Platter ",
@@ -36309,7 +36830,10 @@
         "Products": [
             "Roasted Asparagus - Family Size ",
             "Sweet Potato Mousse - Family Size ",
-            "Idaho Mashed Potatoes - Family Size ",
+            [
+                "Idaho Mashed Potatoes - Family Size ",
+                "Idaho Mashed Potatoes - Family Size "
+            ],
             "Brussel Sprouts with Bacon - Family Size ",
             "Organic Roasted Tri-Colored Carrots - Family Size ",
             [
@@ -37235,7 +37759,10 @@
             "PickupLocation": "Stew Leonard's Farmingdale"
         },
         "Products": [
-            "Snowball Rolls - 1 dozen ",
+            [
+                "Snowball Rolls - 1 dozen ",
+                "Snowball Rolls - 1 dozen "
+            ],
             "Au Gratin  Potatoes - Family Size ",
             "Sweet Potato Mousse - Family Size ",
             "Mrs. Leonard's Homestyle Macaroni and Cheese - Family Size "
@@ -37412,7 +37939,10 @@
             "Idaho Mashed Potatoes - Family Size ",
             "Roasted Asparagus - Family Size ",
             "Triple Brownie Bash Platter     ",
-            "Portugese Rolls - 1/2 dozen ",
+            [
+                "Portugese Rolls - 1/2 dozen ",
+                "Portugese Rolls - 1/2 dozen "
+            ],
             "Boneless Chicken Wing Platter ",
             "Bacon Pecan Ham Glaze "
         ],
@@ -37815,7 +38345,10 @@
         "Products": [
             "Brussel Sprouts with Bacon - Family Size ",
             "Fresh Fruit Salad ",
-            "Au Gratin  Potatoes - Family Size "
+            [
+                "Au Gratin  Potatoes - Family Size ",
+                "Au Gratin  Potatoes - Family Size "
+            ]
         ],
         "Includes": [
             false,
@@ -37845,7 +38378,10 @@
             ],
             "Brussel Sprouts with Bacon - Family Size ",
             "Broccoli Rabe & Roasted Garlic - Family Size ",
-            "Bacon Pecan Ham Glaze "
+            [
+                "Bacon Pecan Ham Glaze ",
+                "Bacon Pecan Ham Glaze "
+            ]
         ],
         "Includes": [
             false,
@@ -37922,7 +38458,10 @@
             ],
             "Country Style Stuffing - Family Size ",
             "Old Fashioned Turkey Gravy ",
-            "Portugese Rolls - 1/2 dozen ",
+            [
+                "Portugese Rolls - 1/2 dozen ",
+                "Portugese Rolls - 1/2 dozen "
+            ],
             "Cheese and Pepperoni Platter "
         ],
         "Includes": [
@@ -37958,6 +38497,8 @@
         },
         "Products": [
             [
+                "Stew's Naked 1lb Shrimp Platter  Extra Large ",
+                [],
                 "Stew's Naked 1lb Shrimp Platter  Extra Large ",
                 []
             ],
@@ -38646,11 +39187,17 @@
             "Coconut Custard Pie - 10 inch ",
             "Vegetable Platter - Extra Large ",
             "Fresh Fruit Platter - Extra Large ",
-            "Snowball Rolls - 1 dozen ",
+            [
+                "Snowball Rolls - 1 dozen ",
+                "Snowball Rolls - 1 dozen "
+            ],
             "Tossed Garden Salad     ",
             "Idaho Mashed Potatoes - Family Size ",
             "Sweet Potato Mousse - Family Size ",
-            "Mrs. Leonard's Homestyle Macaroni and Cheese - Family Size ",
+            [
+                "Mrs. Leonard's Homestyle Macaroni and Cheese - Family Size ",
+                "Mrs. Leonard's Homestyle Macaroni and Cheese - Family Size "
+            ],
             [
                 "Stew's Spiral Cut Ham Half Spiral Ham",
                 []
@@ -38994,7 +39541,11 @@
         "Products": [
             "Macaroni Salad ",
             "Fresh Fruit Salad ",
-            "3 Foot Grinder - 1/2 American 1/2 Italian  "
+            [
+                "3 Foot Grinder - 1/2 American 1/2 Italian  ",
+                "3 Foot Grinder - 1/2 American 1/2 Italian  ",
+                "3 Foot Grinder - 1/2 American 1/2 Italian  "
+            ]
         ],
         "Includes": [
             false,
@@ -39812,7 +40363,10 @@
         "Products": [
             "Brussel Sprouts with Bacon - Family Size ",
             "Fresh Fruit Salad ",
-            "Snowball Rolls - 1 dozen ",
+            [
+                "Snowball Rolls - 1 dozen ",
+                "Snowball Rolls - 1 dozen "
+            ],
             "Rugelach Platter   ",
             "Triple Brownie Bash Platter     "
         ],
@@ -40027,7 +40581,10 @@
         "Products": [
             "Green Bean Almondine - Family Size ",
             "Roasted Asparagus - Family Size ",
-            "Idaho Mashed Potatoes - Family Size ",
+            [
+                "Idaho Mashed Potatoes - Family Size ",
+                "Idaho Mashed Potatoes - Family Size "
+            ],
             [
                 "Stew's Spiral Cut Ham Half Spiral Ham",
                 []
@@ -40154,7 +40711,10 @@
             "PickupLocation": "Stew Leonard's Paramus"
         },
         "Products": [
-            "Snowball Rolls - 1 dozen ",
+            [
+                "Snowball Rolls - 1 dozen ",
+                "Snowball Rolls - 1 dozen "
+            ],
             "Red Wine Bordelaise Sauce ",
             [
                 "Stew's Famous  Filet Mignon Medium",
@@ -40360,7 +40920,10 @@
             "New England Clam Chowder ",
             "Lobster Bisque ",
             "Fresh Fruit Tart  ",
-            "Bacon Pecan Ham Glaze ",
+            [
+                "Bacon Pecan Ham Glaze ",
+                "Bacon Pecan Ham Glaze "
+            ],
             "Stew's Naked  Whole Smoked Ham - Spiral Sliced "
         ],
         "Includes": [
@@ -40392,9 +40955,18 @@
             "PickupLocation": "Stew Leonard's Newington"
         },
         "Products": [
-            "Idaho Mashed Potatoes - Family Size ",
-            "Mrs. Leonard's Homestyle Macaroni and Cheese - Family Size ",
-            "Snowball Rolls - 1 dozen ",
+            [
+                "Idaho Mashed Potatoes - Family Size ",
+                "Idaho Mashed Potatoes - Family Size "
+            ],
+            [
+                "Mrs. Leonard's Homestyle Macaroni and Cheese - Family Size ",
+                "Mrs. Leonard's Homestyle Macaroni and Cheese - Family Size "
+            ],
+            [
+                "Snowball Rolls - 1 dozen ",
+                "Snowball Rolls - 1 dozen "
+            ],
             "Cheese Lasagna ",
             "Tossed Garden Salad     ",
             "Brussel Sprouts with Bacon - Family Size ",
@@ -40428,7 +41000,10 @@
             "PickupLocation": "Stew Leonard's Danbury"
         },
         "Products": [
-            "Cheese Lasagna "
+            [
+                "Cheese Lasagna ",
+                "Cheese Lasagna "
+            ]
         ],
         "Includes": [
             false
@@ -40779,7 +41354,10 @@
         },
         "Products": [
             "Roasted Asparagus - Family Size ",
-            "Broccoli Rabe & Roasted Garlic - Family Size "
+            [
+                "Broccoli Rabe & Roasted Garlic - Family Size ",
+                "Broccoli Rabe & Roasted Garlic - Family Size "
+            ]
         ],
         "Includes": [
             false,
@@ -40969,7 +41547,10 @@
             "PickupLocation": "Stew Leonard's Norwalk"
         },
         "Products": [
-            "Beef Brisket "
+            [
+                "Beef Brisket ",
+                "Beef Brisket "
+            ]
         ],
         "Includes": [
             false
@@ -41096,12 +41677,31 @@
             "PickupLocation": "Stew Leonard's Norwalk"
         },
         "Products": [
-            "Green Bean Almondine - Family Size ",
+            [
+                "Green Bean Almondine - Family Size ",
+                "Green Bean Almondine - Family Size "
+            ],
             "Organic Roasted Tri-Colored Carrots - Family Size ",
-            "Roasted Yams - Family Size ",
-            "Rugelach Platter   ",
-            "Grilled Balsamic Chicken ",
-            "Beef Brisket ",
+            [
+                "Roasted Yams - Family Size ",
+                "Roasted Yams - Family Size ",
+                "Roasted Yams - Family Size ",
+                "Roasted Yams - Family Size "
+            ],
+            [
+                "Rugelach Platter   ",
+                "Rugelach Platter   "
+            ],
+            [
+                "Grilled Balsamic Chicken ",
+                "Grilled Balsamic Chicken ",
+                "Grilled Balsamic Chicken "
+            ],
+            [
+                "Beef Brisket ",
+                "Beef Brisket ",
+                "Beef Brisket "
+            ],
             "Capri Salad  ",
             "Caesar Salad "
         ],
@@ -41191,7 +41791,10 @@
                 "Stew's Famous  Filet Mignon Medium",
                 []
             ],
-            "Snowball Rolls - 1 dozen ",
+            [
+                "Snowball Rolls - 1 dozen ",
+                "Snowball Rolls - 1 dozen "
+            ],
             "Boneless Chicken Wing Platter ",
             "Idaho Mashed Potatoes - Family Size ",
             "Mrs. Leonard's Homestyle Macaroni and Cheese - Family Size ",
@@ -41251,6 +41854,8 @@
         },
         "Products": [
             [
+                "Stew's Naked 1lb Shrimp Platter  Extra Large ",
+                [],
                 "Stew's Naked 1lb Shrimp Platter  Extra Large ",
                 []
             ],
@@ -41680,7 +42285,12 @@
             "Triple Brownie Bash Platter     ",
             "Cookie Platter Assortment - Medium ",
             "American PU PU Platter ",
-            "Snowball Rolls - 1 dozen ",
+            [
+                "Snowball Rolls - 1 dozen ",
+                "Snowball Rolls - 1 dozen ",
+                "Snowball Rolls - 1 dozen ",
+                "Snowball Rolls - 1 dozen "
+            ],
             [
                 "Stew's Famous  Filet Mignon Medium-Rare",
                 []
@@ -41690,7 +42300,10 @@
                 []
             ],
             "Penne ala Vodka ",
-            "Idaho Mashed Potatoes - Family Size "
+            [
+                "Idaho Mashed Potatoes - Family Size ",
+                "Idaho Mashed Potatoes - Family Size "
+            ]
         ],
         "Includes": [
             false,
@@ -41979,7 +42592,10 @@
                 "Stew's Spiral Cut Ham Whole Spiral Ham +",
                 []
             ],
-            "Snowball Rolls - 1 dozen ",
+            [
+                "Snowball Rolls - 1 dozen ",
+                "Snowball Rolls - 1 dozen "
+            ],
             " Fresh Mozzarella, Basil and Tomato Platter ",
             "Swedish Meatball Platter "
         ],
@@ -42042,7 +42658,10 @@
                 []
             ],
             "Idaho Mashed Potatoes - Family Size ",
-            "Mrs. Leonard's Homestyle Macaroni and Cheese - Family Size ",
+            [
+                "Mrs. Leonard's Homestyle Macaroni and Cheese - Family Size ",
+                "Mrs. Leonard's Homestyle Macaroni and Cheese - Family Size "
+            ],
             "Country Style Stuffing - Family Size "
         ],
         "Includes": [
@@ -42314,9 +42933,15 @@
                 "Stew's Naked 1lb Shrimp Platter  Extra Large ",
                 []
             ],
-            "Portugese Rolls - 1/2 dozen ",
+            [
+                "Portugese Rolls - 1/2 dozen ",
+                "Portugese Rolls - 1/2 dozen "
+            ],
             "Cookie Platter Assortment - Large ",
-            "Cranberry Orange Sauce     ",
+            [
+                "Cranberry Orange Sauce     ",
+                "Cranberry Orange Sauce     "
+            ],
             "Caesar Salad ",
             [
                 "Dinner for 8 - Beef Brisket ",
@@ -42329,7 +42954,10 @@
             "Old Fashioned Turkey Gravy ",
             "Roasted Sliced Turkey Breast ",
             "Country Style Stuffing - Family Size ",
-            "Fresh Fruit Tart  "
+            [
+                "Fresh Fruit Tart  ",
+                "Fresh Fruit Tart  "
+            ]
         ],
         "Includes": [
             [
@@ -42370,6 +42998,10 @@
         "Products": [
             "American PU PU Platter ",
             [
+                "Stew's Naked 1lb Shrimp Platter  Extra Large ",
+                [],
+                "Stew's Naked 1lb Shrimp Platter  Extra Large ",
+                [],
                 "Stew's Naked 1lb Shrimp Platter  Extra Large ",
                 []
             ]
@@ -42425,7 +43057,10 @@
             "Pecan Pie - 10 inch ",
             "Italian Cookie Platter - 1.5 lbs. ",
             "Sweet Potato Mousse - Family Size ",
-            "Mrs. Leonard's Homestyle Macaroni and Cheese - Family Size ",
+            [
+                "Mrs. Leonard's Homestyle Macaroni and Cheese - Family Size ",
+                "Mrs. Leonard's Homestyle Macaroni and Cheese - Family Size "
+            ],
             "Mini Cannoli Platter  ",
             "Bacon Pecan Ham Glaze "
         ],
@@ -42853,7 +43488,10 @@
             "PickupLocation": "Stew Leonard's Norwalk"
         },
         "Products": [
-            "Green Bean Almondine - Family Size ",
+            [
+                "Green Bean Almondine - Family Size ",
+                "Green Bean Almondine - Family Size "
+            ],
             "Coleslaw   ",
             "Stew's Naked  Whole Smoked Ham - Spiral Sliced "
         ],
@@ -43184,8 +43822,17 @@
             "PickupLocation": "Stew Leonard's Farmingdale"
         },
         "Products": [
-            "Bacon Pecan Ham Glaze ",
             [
+                "Bacon Pecan Ham Glaze ",
+                "Bacon Pecan Ham Glaze "
+            ],
+            [
+                "Dinner for 8 - Spiral Ham ",
+                [
+                    "Mashed Potatoes - Family Size",
+                    "Roasted Asparagus - Family Size",
+                    "Apple Pie"
+                ],
                 "Dinner for 8 - Spiral Ham ",
                 [
                     "Mashed Potatoes - Family Size",
@@ -44526,7 +45173,10 @@
         "Products": [
             "Cheese and Pepperoni Platter ",
             "Red Potato Salad ",
-            "Chicken Wingette Platter ",
+            [
+                "Chicken Wingette Platter ",
+                "Chicken Wingette Platter "
+            ],
             "Sausage & Peppers ",
             "Roasted Asparagus - Family Size ",
             "Broccoli Rabe & Roasted Garlic - Family Size ",
@@ -44652,7 +45302,10 @@
             "PickupLocation": "Stew Leonard's East Meadow"
         },
         "Products": [
-            "Idaho Mashed Potatoes - Family Size ",
+            [
+                "Idaho Mashed Potatoes - Family Size ",
+                "Idaho Mashed Potatoes - Family Size "
+            ],
             "Organic Roasted Tri-Colored Carrots - Family Size ",
             "Au Gratin  Potatoes - Family Size "
         ],
@@ -44682,7 +45335,10 @@
             "Eggplant Rollatini ",
             "Grilled Lemon Herb Chicken Breast ",
             "Mini Kaiser Rolls - 1 dozen ",
-            "Kaiser Rolls - 1/2 dozen ",
+            [
+                "Kaiser Rolls - 1/2 dozen ",
+                "Kaiser Rolls - 1/2 dozen "
+            ],
             "Cold Cut Platter - Large "
         ],
         "Includes": [
@@ -45078,9 +45734,19 @@
             "PickupLocation": "Stew Leonard's Danbury"
         },
         "Products": [
-            "Mrs. Leonard's Homestyle Macaroni and Cheese - Family Size ",
-            "Country Hearth Bread ",
-            "Country Style Stuffing - Family Size ",
+            [
+                "Mrs. Leonard's Homestyle Macaroni and Cheese - Family Size ",
+                "Mrs. Leonard's Homestyle Macaroni and Cheese - Family Size "
+            ],
+            [
+                "Country Hearth Bread ",
+                "Country Hearth Bread "
+            ],
+            [
+                "Country Style Stuffing - Family Size ",
+                "Country Style Stuffing - Family Size ",
+                "Country Style Stuffing - Family Size "
+            ],
             "Old Fashioned Turkey Gravy ",
             "Cranberry Orange Sauce     ",
             "Roasted Sliced Turkey Breast "
@@ -45179,7 +45845,10 @@
             "Red Potato Salad ",
             "Fresh Fruit Salad ",
             "Stew's Choice Salad    ",
-            "Mrs. Leonard's Homestyle Macaroni and Cheese - Family Size ",
+            [
+                "Mrs. Leonard's Homestyle Macaroni and Cheese - Family Size ",
+                "Mrs. Leonard's Homestyle Macaroni and Cheese - Family Size "
+            ],
             "3 Foot Grinder - 1/2 American 1/2 Italian  "
         ],
         "Includes": [
@@ -45777,8 +46446,14 @@
         "Products": [
             "Green Bean Almondine - Family Size ",
             "Organic Roasted Tri-Colored Carrots - Family Size ",
-            "Mrs. Leonard's Homestyle Macaroni and Cheese - Family Size ",
-            "Au Gratin  Potatoes - Family Size "
+            [
+                "Mrs. Leonard's Homestyle Macaroni and Cheese - Family Size ",
+                "Mrs. Leonard's Homestyle Macaroni and Cheese - Family Size "
+            ],
+            [
+                "Au Gratin  Potatoes - Family Size ",
+                "Au Gratin  Potatoes - Family Size "
+            ]
         ],
         "Includes": [
             false,
@@ -45927,12 +46602,19 @@
         "Products": [
             [
                 "Stew's Naked 1lb Shrimp Platter  Jumbo +",
+                [],
+                "Stew's Naked 1lb Shrimp Platter  Jumbo +",
                 []
             ],
-            "Cheese Lasagna ",
+            [
+                "Cheese Lasagna ",
+                "Cheese Lasagna "
+            ],
             "Dutch Apple Pie - 10 inch ",
             "Coconut Custard Pie - 10 inch ",
             [
+                "Stew's Naked 1lb Shrimp Platter  Extra Large ",
+                [],
                 "Stew's Naked 1lb Shrimp Platter  Extra Large ",
                 []
             ]
@@ -47098,6 +47780,8 @@
         "Products": [
             [
                 "Stew's Naked 1lb Shrimp Platter  Jumbo +",
+                [],
+                "Stew's Naked 1lb Shrimp Platter  Jumbo +",
                 []
             ],
             [
@@ -47275,6 +47959,8 @@
         },
         "Products": [
             [
+                "Stew's Naked 1lb Shrimp Platter  Colossal +",
+                [],
                 "Stew's Naked 1lb Shrimp Platter  Colossal +",
                 []
             ],
@@ -47731,9 +48417,18 @@
             "Fresh Fruit Platter - Large ",
             "Roasted Asparagus - Family Size ",
             "Green Bean Almondine - Family Size ",
-            "Idaho Mashed Potatoes - Family Size ",
-            "Mrs. Leonard's Homestyle Macaroni and Cheese - Family Size ",
-            "Brussel Sprouts with Bacon - Family Size ",
+            [
+                "Idaho Mashed Potatoes - Family Size ",
+                "Idaho Mashed Potatoes - Family Size "
+            ],
+            [
+                "Mrs. Leonard's Homestyle Macaroni and Cheese - Family Size ",
+                "Mrs. Leonard's Homestyle Macaroni and Cheese - Family Size "
+            ],
+            [
+                "Brussel Sprouts with Bacon - Family Size ",
+                "Brussel Sprouts with Bacon - Family Size "
+            ],
             "Ham Glaze "
         ],
         "Includes": [
@@ -48313,7 +49008,10 @@
             "PickupLocation": "Stew Leonard's Danbury"
         },
         "Products": [
-            "Brussel Sprouts with Bacon - Family Size "
+            [
+                "Brussel Sprouts with Bacon - Family Size ",
+                "Brussel Sprouts with Bacon - Family Size "
+            ]
         ],
         "Includes": [
             false
@@ -48448,7 +49146,10 @@
         "Products": [
             "Caesar Salad ",
             "Primavera Pasta Salad ",
-            "3 Foot Grinder - 1/2 American 1/2 Italian  "
+            [
+                "3 Foot Grinder - 1/2 American 1/2 Italian  ",
+                "3 Foot Grinder - 1/2 American 1/2 Italian  "
+            ]
         ],
         "Includes": [
             false,
@@ -48825,7 +49526,10 @@
                 []
             ],
             "Brussel Sprouts with Bacon - Family Size ",
-            "Roasted Asparagus - Family Size ",
+            [
+                "Roasted Asparagus - Family Size ",
+                "Roasted Asparagus - Family Size "
+            ],
             [
                 "Dinner for 8 - Beef Brisket ",
                 [
@@ -49313,7 +50017,10 @@
             "PickupLocation": "Stew Leonard's Danbury"
         },
         "Products": [
-            "Mini Kaiser Rolls - 1 dozen ",
+            [
+                "Mini Kaiser Rolls - 1 dozen ",
+                "Mini Kaiser Rolls - 1 dozen "
+            ],
             "Vegetable Platter - Extra Large ",
             "Cold Cut Platter - Extra Large "
         ],
@@ -49339,7 +50046,11 @@
             "PickupLocation": "Stew Leonard's East Meadow"
         },
         "Products": [
-            "Red Wine Bordelaise Sauce ",
+            [
+                "Red Wine Bordelaise Sauce ",
+                "Red Wine Bordelaise Sauce ",
+                "Red Wine Bordelaise Sauce "
+            ],
             [
                 "Stew's Naked Filet Mignon Roast  Medium",
                 []
@@ -49367,7 +50078,10 @@
         },
         "Products": [
             "Fresh Fruit Platter - Large ",
-            "Old Fashioned Turkey Gravy ",
+            [
+                "Old Fashioned Turkey Gravy ",
+                "Old Fashioned Turkey Gravy "
+            ],
             "Roasted Sliced Turkey Breast ",
             "Stew's Naked Roasted Leg of Lamb ",
             "Roasted Asparagus - Family Size ",
@@ -49484,7 +50198,10 @@
         "Products": [
             "Chicken Piccata ",
             "Vegetable Fried Rice ",
-            "Chicken Noodle Soup "
+            [
+                "Chicken Noodle Soup ",
+                "Chicken Noodle Soup "
+            ]
         ],
         "Includes": [
             false,
@@ -49631,9 +50348,15 @@
             "Cheese and Pepperoni Platter ",
             "Organic Roasted Tri-Colored Carrots - Family Size ",
             "Bacon Pecan Ham Glaze ",
-            "Green Bean Almondine - Family Size ",
+            [
+                "Green Bean Almondine - Family Size ",
+                "Green Bean Almondine - Family Size "
+            ],
             "Mrs. Leonard's Homestyle Macaroni and Cheese - Family Size ",
-            "Sweet Potato Mousse - Family Size "
+            [
+                "Sweet Potato Mousse - Family Size ",
+                "Sweet Potato Mousse - Family Size "
+            ]
         ],
         "Includes": [
             false,
@@ -49985,7 +50708,10 @@
         },
         "Products": [
             "Roasted Asparagus - Family Size ",
-            "Sunrise Platter "
+            [
+                "Sunrise Platter ",
+                "Sunrise Platter "
+            ]
         ],
         "Includes": [
             false,
@@ -50211,7 +50937,10 @@
         },
         "Products": [
             "Red Roasted Potatoes - Family Size ",
-            "Au Gratin  Potatoes - Family Size ",
+            [
+                "Au Gratin  Potatoes - Family Size ",
+                "Au Gratin  Potatoes - Family Size "
+            ],
             "French Baguette "
         ],
         "Includes": [
@@ -50273,12 +51002,17 @@
         "Products": [
             [
                 "Stew's Naked 1lb Shrimp Platter  Extra Large ",
+                [],
+                "Stew's Naked 1lb Shrimp Platter  Extra Large ",
                 []
             ],
             "Caesar Salad ",
             " Fresh Mozzarella, Basil and Tomato Platter ",
             "Mrs. Leonard's Homestyle Macaroni and Cheese - Family Size ",
-            "Idaho Mashed Potatoes - Family Size ",
+            [
+                "Idaho Mashed Potatoes - Family Size ",
+                "Idaho Mashed Potatoes - Family Size "
+            ],
             "Bakery Special Requirements\t "
         ],
         "Includes": [
@@ -50374,7 +51108,12 @@
         "Products": [
             "Triple Brownie Bash Platter     ",
             "Cookie Platter Assortment - Medium ",
-            "Roasted Garlic Caprese Flatbread ",
+            [
+                "Roasted Garlic Caprese Flatbread ",
+                "Roasted Garlic Caprese Flatbread ",
+                "Roasted Garlic Caprese Flatbread ",
+                "Roasted Garlic Caprese Flatbread "
+            ],
             "Antipasto Platter ",
             "Cheese and Pepperoni Platter ",
             [
@@ -50447,7 +51186,10 @@
             "Chicken Wingette Platter ",
             "Tossed Garden Salad     ",
             "3 Foot Grinder - Grilled Chicken ",
-            "Pepperoni Stuffed Loaf - Half "
+            [
+                "Pepperoni Stuffed Loaf - Half ",
+                "Pepperoni Stuffed Loaf - Half "
+            ]
         ],
         "Includes": [
             false,
@@ -50474,7 +51216,10 @@
         "Products": [
             "Antipasto Platter ",
             "Chicken Wingette Platter ",
-            "American PU PU Platter ",
+            [
+                "American PU PU Platter ",
+                "American PU PU Platter "
+            ],
             "Sweet & Sour Meatballs ",
             "Fresh Fruit Salad ",
             "Vegetable Platter - Extra Large ",
@@ -50553,10 +51298,24 @@
         },
         "Products": [
             "Oven Roasted Vegetables - Family Size ",
-            "Broccoli Rabe & Roasted Garlic - Family Size ",
-            "Mrs. Leonard's Homestyle Macaroni and Cheese - Family Size ",
-            "Brussel Sprouts with Bacon - Family Size ",
-            "Sweet Potato Mousse - Family Size "
+            [
+                "Broccoli Rabe & Roasted Garlic - Family Size ",
+                "Broccoli Rabe & Roasted Garlic - Family Size "
+            ],
+            [
+                "Mrs. Leonard's Homestyle Macaroni and Cheese - Family Size ",
+                "Mrs. Leonard's Homestyle Macaroni and Cheese - Family Size ",
+                "Mrs. Leonard's Homestyle Macaroni and Cheese - Family Size "
+            ],
+            [
+                "Brussel Sprouts with Bacon - Family Size ",
+                "Brussel Sprouts with Bacon - Family Size "
+            ],
+            [
+                "Sweet Potato Mousse - Family Size ",
+                "Sweet Potato Mousse - Family Size ",
+                "Sweet Potato Mousse - Family Size "
+            ]
         ],
         "Includes": [
             false,

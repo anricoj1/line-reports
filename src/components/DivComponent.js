@@ -21,9 +21,7 @@ const DivComponent = ({ orders, defaultHeaders }) => {
 
     orders.map(order => { //iter orders to query by store
         if (navSelection !== 'All Stores') {
-            if (order.Order.Status !== 'Complete') {
-                if (order.Order.StoreName.includes(navSelection)) return arr.push(order)
-            }
+            order.Order.StoreName.includes(navSelection) ? arr.push(order) : null;
         } else {
             arr = orders;
         }
@@ -33,6 +31,8 @@ const DivComponent = ({ orders, defaultHeaders }) => {
     const convertDate = (date) => { // convert date to remove trailning 0's (04/04/2021)
         if ((date.substring(3, 4) === '0') && (date.substring(0, 1) === '0')) {
             return `${date.substring(1, 2)}/${date.substring(4, 5)}/${date.substring(6, 10)}`
+        } else {
+            return `${date.substring(1,2)}/${date.substring(3, 10)}`;
         }
     }
 

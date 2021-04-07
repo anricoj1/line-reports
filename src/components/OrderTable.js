@@ -6,8 +6,15 @@ import ThisOrder from './ThisOrder';
 
 
 const OrderTable = ({ headers, data, store, setAppState, setComponent }) => {
+    const trClass = (status) => {
+        if (status === 'Complete') return 'table-success';
+        if (status === 'Pending') return 'table-warning';
+        if (status === 'Picking' || 'Packing' || 'Staging') return 'table-danger';
+    }
+
+
     return (
-        <div>
+        <div className="order-table">
             <h2 className="text-center">{store} W/ {data.length} Orders</h2>
             <table className="table">
                 <thead>
@@ -17,7 +24,7 @@ const OrderTable = ({ headers, data, store, setAppState, setComponent }) => {
                         ))}
                     </tr>
                     {data.map((order, j) => (
-                        <tr key={j} onDoubleClick={() => { setAppState('Order'); setComponent(<ThisOrder data={order} defaultHeaders={headers} setAppState={e => setAppState(e)} setComponent={e => setComponent(e)} />)}}>
+                        <tr className={trClass(order.Order.Status)} key={j} onDoubleClick={() => { setAppState('Order'); setComponent(<ThisOrder data={order} defaultHeaders={headers} setAppState={e => setAppState(e)} setComponent={e => setComponent(e)} />)}}>
                             <td>{order.Order.OrderID}</td>
                             <td>{order.Order.Name}</td>
                             <td>{order.Order.PhoneNumber}</td>

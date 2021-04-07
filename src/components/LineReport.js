@@ -5,46 +5,16 @@ import React, { useState } from 'react';
 import LineItem from './LineItem';
 
 const LineReport = ({ orders, date, navSelection, setAppState }) => {
-    const [selection, setSelection] = useState('All');
+    const [selection, setSelection] = useState('No Filter');
     let productArr = [];
     let counts = {}; //init product counts
     let countArr = [];
-    let selections = ['All *Soon*', 'Sides *Soon*', 'Main *Soon*', 'Included *Soon*'];
+    let selections = ['No Filter', 'Bakery', 'Kitchen', 'Deli', 'Produce', 'Sushi', 'Salbar', 'BBQ'];
 
     // set arrays to flatten
     let included = [];
     let products = [];
 
-    for (let i = 0; i < orders.length; i++) {
-
-        let flat_prod = orders[i].Products.flat(1);
-        let flatten = flat_prod.flat(1);
-
-        for (let j = 0; j < flatten.length; j++) {
-            products.push(flatten[j]);
-        }
-
-        for (let k = 0; k < orders[i].Includes.length; k++) {
-            if (orders[i].Includes[k] !== false) {
-                included.push(orders[i].Includes[k]);
-            }
-        }
-    }
-
-
-    productArr = [products, included.flat(1)].flat(1)
-
-
-    for (let i = 0; i < productArr.length; i++) { //gather quanties of products in array
-        let lineitem = productArr[i];
-
-        counts[lineitem] = counts[lineitem] ? counts[lineitem] + 1 : 1;
-    }
-
-
-    for (const [key, value] of Object.entries(counts)) { //push Line-Item Obj w/ key & value calls (this.getDept())
-        countArr.push(new LineItem(value, key))
-    }
 
     const exportTable = () => {
         let table = document.getElementById('printable');
@@ -69,16 +39,42 @@ const LineReport = ({ orders, date, navSelection, setAppState }) => {
 
     }
 
+    const HandleFilter = () => {
+        for (let i = 0; i < orders.length; i++) {
 
-    return (
-        <div className="Report">
-            <button className="btn btn-danger btn-sm" onClick={() => exportTable()}>Print</button>
-            <button className="btn btn-primary btn-sm" onClick={() => setAppState('Table')}>Back To Table</button>
-            <select className="btn btn-success btn-sm text-center" value={selection} onChange={e => setSelection(e.target.value)}>
-                {selections.map(option => (
-                    <option key={option}>{option}</option>
-                ))}
-            </select>
+            let flat_prod = orders[i].Products.flat(1);
+            let flatten = flat_prod.flat(1);
+    
+            for (let j = 0; j < flatten.length; j++) {
+                products.push(flatten[j]);
+            }
+    
+            for (let k = 0; k < orders[i].Includes.length; k++) {
+                if (orders[i].Includes[k] !== false) {
+                    included.push(orders[i].Includes[k]);
+                }
+            }
+        }
+        
+        
+        productArr = [products, included.flat(1)].flat(1)
+        
+        
+        for (let i = 0; i < productArr.length; i++) { //gather quanties of products in array
+            let lineitem = productArr[i];
+            
+            counts[lineitem] = counts[lineitem] ? counts[lineitem] + 1 : 1;
+        }
+        
+        
+        for (const [key, value] of Object.entries(counts)) { //push Line-Item Obj w/ key & value calls (this.getDept())
+            countArr.push(new LineItem(value, key))
+        }
+
+        selection !== 'No Filter' ? countArr = countArr.filter(e => e.dept !== undefined ? e.dept.includes(selection) : null) : countArr;
+        
+
+        return (
             <div id="printable">
                 <h2>Line Report For {date} In {navSelection}</h2>
                 <table className="table">
@@ -100,6 +96,20 @@ const LineReport = ({ orders, date, navSelection, setAppState }) => {
                     </tbody>
                 </table>
             </div>
+        )
+    }
+
+
+    return (
+        <div className="Report">
+            <button className="btn btn-danger btn-sm" onClick={() => exportTable()}>Print</button>
+            <button className="btn btn-primary btn-sm" onClick={() => setAppState('Table')}>Back To Table</button>
+            <select className="btn btn-success btn-sm text-center" value={selection} onChange={e => setSelection(e.target.value)}>
+                {selections.map(option => (
+                    <option key={option}>{option}</option>
+                ))}
+            </select>
+            <HandleFilter />
         </div>
     )
 }

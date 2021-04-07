@@ -31,6 +31,26 @@ html, body, #root, .Web, .Mobile {
     border: 1px solid black;
 }
 
+
+/* order table - sticky header - scroll on overflow of 700px */
+.order-table {
+    height: 800px;
+    overflow-y: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.order-table::-webkit-scrollbar {
+    display: none;
+}
+
+.order-table th {
+    top: 0;
+    position: sticky;
+    background-color: #38A745;
+    color: white;
+}
+
 .table th, tr, td {
     border: 1px solid black;
 }
@@ -40,7 +60,7 @@ html, body, #root, .Web, .Mobile {
 }
 
 .table tr:hover {
-    background-color: yellow;
+    background-color: #D1D1CF;
 }
 
 .thisOrder {
