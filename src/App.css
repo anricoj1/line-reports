@@ -71,3 +71,28 @@ html, body, #root, .Web, .Mobile {
     position: relative;
 }
 
+
+.customer-notes li {
+    list-style: none;
+}
+
+.legend {
+    position: relative;
+
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    text-align: center;
+    margin: auto;
+    padding-top: 60px;
+
+    height: 100px;
+    width: 200px;
+}
+
+.legend li {
+    list-style: none;
+}
+

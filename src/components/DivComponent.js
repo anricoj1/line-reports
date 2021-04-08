@@ -21,7 +21,7 @@ const DivComponent = ({ orders, defaultHeaders }) => {
 
     orders.map(order => { //iter orders to query by store
         if (navSelection !== 'All Stores') {
-            order.Order.StoreName.includes(navSelection) ? arr.push(order) : null;
+            order.Order.User.StoreName.includes(navSelection) ? arr.push(order) : null;
         } else {
             arr = orders;
         }
@@ -39,7 +39,7 @@ const DivComponent = ({ orders, defaultHeaders }) => {
 
     const filterByDate = (date) => { //filter by date push to (newarr) & return
         arr.map(order => {
-            let orderDate = order.Order.StartTimeWindow.toString().substring(0, 9);
+            let orderDate = order.Order.User.StartTimeWindow.toString().substring(0, 9);
             let selectorDate = `${date.toString().substring(5, 7)}/${date.toString().substring(8, 10)}/${date.toString().substring(0, 4)}`;
 
             if (orderDate.includes(convertDate(selectorDate))) return newarr.push(order);
@@ -53,6 +53,14 @@ const DivComponent = ({ orders, defaultHeaders }) => {
         <div className="App">
             <div className="navbar navbar-expand-lg navbar-dark bg-success">
                 <Navbar setNavSelection={e => setNavSelection(e)} setAppState={e => setAppState(e)} date={date} />
+            </div>
+            <div className="legend">
+                <h4>Legend</h4>
+                <ul>
+                    <li className="table-success">Complete</li>
+                    <li className="table-warning">Pending</li>
+                    <li className="table-danger">Picking, Packing & Staging</li>
+                </ul>
             </div>
             <div className="taskbar">
                 <Taskbar setComponent={e => setComponent(e)} setDate={e => setDate(e)} date={date} defaultHeaders={defaultHeaders} filterByDate={e => filterByDate(e)} newarr={newarr} navSelection={navSelection} setAppState={e => setAppState(e)} appState={appState} />

@@ -14,30 +14,34 @@ const OrderTable = ({ headers, data, store, setAppState, setComponent }) => {
 
 
     return (
-        <div className="order-table">
-            <h2 className="text-center">{store} W/ {data.length} Orders</h2>
-            <table className="table">
-                <thead>
-                    <tr>
-                        {headers.map((header, i) => (
-                            <th key={i}>{header}</th>
-                        ))}
-                    </tr>
-                    {data.map((order, j) => (
-                        <tr className={trClass(order.Order.Status)} key={j} onDoubleClick={() => { setAppState('Order'); setComponent(<ThisOrder data={order} defaultHeaders={headers} setAppState={e => setAppState(e)} setComponent={e => setComponent(e)} />)}}>
-                            <td>{order.Order.OrderID}</td>
-                            <td>{order.Order.Name}</td>
-                            <td>{order.Order.PhoneNumber}</td>
-                            <td>{order.Order.PickupLocation}</td>
-                            <td>{order.Order.Status}</td>
-                            <td>{order.Order.StartTimeWindow}</td>
-                            <td>{order.Order.TimeStamp}</td>
-                            <td>{order.Order.Total}</td>
-                            <td>{order.Order.TotalProductCount}</td>
+        <div>
+            <div className="store-selection">
+                <h2 className="text-center">{store} W/ {data.length} Orders</h2>
+            </div>
+            <div className="order-table">
+                <table className="table">
+                    <thead>
+                        <tr>
+                            {headers.map((header, i) => (
+                                <th key={i}>{header}</th>
+                            ))}
                         </tr>
-                    ))}
-                </thead>
-            </table>
+                        {data.map((order, j) => (
+                            <tr className={trClass(order.Order.User.Status)} key={j} onDoubleClick={() => { setAppState('Order'); setComponent(<ThisOrder data={order} defaultHeaders={headers} setAppState={e => setAppState(e)} setComponent={e => setComponent(e)} />)}}>
+                                <td>{order.Order.User.OrderID}</td>
+                                <td>{order.Order.User.Name}</td>
+                                <td>{order.Order.User.PhoneNumber}</td>
+                                <td>{order.Order.User.PickupLocation}</td>
+                                <td>{order.Order.User.Status}</td>
+                                <td>{order.Order.User.StartTimeWindow}</td>
+                                <td>{order.Order.User.TimeStamp}</td>
+                                <td>{order.Order.User.Total}</td>
+                                <td>{order.Order.User.TotalProductCount}</td>
+                            </tr>
+                        ))}
+                    </thead>
+                </table>
+            </div>
         </div>
     )
 }

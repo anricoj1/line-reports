@@ -79,7 +79,7 @@ const LineReport = ({ orders, date, navSelection, setAppState }) => {
                 <h2>Line Report For {date} In {navSelection}</h2>
                 <table className="table">
                     <thead>
-                        <tr>
+                        <tr style={{backgroundColor: '#38A745', color: 'white'}}>
                             <th>Qty</th>
                             <th>Item</th>
                             <th>Dept</th>

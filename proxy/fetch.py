@@ -42,7 +42,11 @@ def send_request():
             
             
                 main.extend([{
-                    "Order": response,
+                    "Order": {
+                        "User": response,
+                        "Attributes": fullorder['OrderAttributes']
+                    },
+                    "Notes": [x['Note'] for x in fullorder['OrderLines']],
                     "Products": products,
                     "Includes": included
                 }])
