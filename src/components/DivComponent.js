@@ -14,7 +14,7 @@ import '../App.css';
 const DivComponent = ({ orders, defaultHeaders }) => {
     const [appState, setAppState] = useState('Table'); //init appState
     const [navSelection, setNavSelection] = useState('All Stores'); //navigation selector by store
-    const [component, setComponent] = useState(<OrderTable headers={defaultHeaders} data={orders} store={navSelection} setAppState={e => setAppState(e)} setComponent={e => setComponent(e)} />); //mount init {component}
+    const [component, setComponent] = useState(<OrderTable headers={defaultHeaders} data={orders} store={navSelection} setAppState={e => setAppState(e)} appState={appState} setComponent={e => setComponent(e)} />); //mount init {component}
     const [date, setDate] = useState(new Date());
     let arr = [];
     let newarr = [];
@@ -66,7 +66,7 @@ const DivComponent = ({ orders, defaultHeaders }) => {
                 <Taskbar setComponent={e => setComponent(e)} setDate={e => setDate(e)} date={date} defaultHeaders={defaultHeaders} filterByDate={e => filterByDate(e)} newarr={newarr} navSelection={navSelection} setAppState={e => setAppState(e)} appState={appState} />
             </div>
             <div className="component">
-                {appState === navSelection || appState === date || appState === 'Table' ? <OrderTable headers={defaultHeaders} data={arr} store={navSelection} setAppState={e => setAppState(e)} setComponent={e => setComponent(e)} /> : component}
+                {appState === navSelection || appState === date || appState === 'Table' ? <OrderTable headers={defaultHeaders} data={arr} store={navSelection} setAppState={e => setAppState(e)} appState={appState} setComponent={e => setComponent(e)} /> : component}
             </div>
         </div>
     )
