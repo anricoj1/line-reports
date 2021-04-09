@@ -9,7 +9,7 @@ const LineReport = ({ orders, date, navSelection, setAppState }) => {
     let productArr = [];
     let counts = {}; //init product counts
     let countArr = [];
-    let selections = ['No Filter', 'Bakery', 'Kitchen', 'Deli', 'Produce', 'Sushi', 'Salbar', 'BBQ'];
+    let selections = ['No Filter', 'Bakery', 'Kitchen', 'Deli', 'Produce', 'Sushi', 'BBQ'];
 
     // set arrays to flatten
     let included = [];
@@ -46,7 +46,7 @@ const LineReport = ({ orders, date, navSelection, setAppState }) => {
             let flatten = flat_prod.flat(1);
     
             for (let j = 0; j < flatten.length; j++) {
-                products.push(flatten[j]);
+                flatten[j] !== null ? products.push(flatten[j]) : null;
             }
     
             for (let k = 0; k < orders[i].Includes.length; k++) {

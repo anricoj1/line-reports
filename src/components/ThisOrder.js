@@ -10,7 +10,6 @@ import '../App.css';
 
 
 const ThisOrder = ({ data, defaultHeaders, setAppState, appState, setComponent }) => {
-    console.log(appState);
     let productArr = [];
     let counts = {}; //init product counts
     let countArr = [];
@@ -23,7 +22,7 @@ const ThisOrder = ({ data, defaultHeaders, setAppState, appState, setComponent }
     let flatten = flat_prod.flat(1);
     
     for (let j = 0; j < flatten.length; j++) { //push products
-        products.push(flatten[j]);
+        flatten[j] !== null ? products.push(flatten[j]) : null;
     }
     
     for (let k = 0; k < data.Includes.length; k++) { // push included items
@@ -77,10 +76,10 @@ const ThisOrder = ({ data, defaultHeaders, setAppState, appState, setComponent }
 
     return (
         <div>
-            {appState !== '' || 'Due-List' ? <button className="btn btn-danger btn-sm" onClick={() => printOrder()}>Print</button> : null}
             <div className="thisOrder" id="printable">
                 <h1 className="text-center">Order Invoice For {data.Order.User.Name}</h1>
-                <button className="btn btn-danger btn-sm" onClick={() => setAppState('Table')}>Back</button>
+                <button className="btn btn-primary btn-sm" onClick={() => setAppState('Table')}>Back</button>
+                <button className="btn btn-danger btn-sm" onClick={() => printOrder()}>Print</button>
                 <table className="table">
                     <thead>
                         <tr style={{backgroundColor: '#38A745', color: 'white'}}>

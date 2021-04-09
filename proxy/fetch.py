@@ -37,7 +37,7 @@ def send_request():
         if response['Status'] != 'Canceled':
             print('Working on %s' %(response['OrderID']))
             if len(fullorder['OrderLines']) > 0:
-                products = [getSize(x['Product']['Name'], x['Options'], x['Count']) for x in fullorder['OrderLines']]
+                products = [getSize(x['Product']['Name'], x['Options'], x['Count'], x) for x in fullorder['OrderLines']]
                 included = [getIncludedItems(x['Product']['UPC']) for x in fullorder['OrderLines']]
             
             
@@ -74,7 +74,6 @@ def fetch_order(id):
     f.write(json.dumps(fullorder, default=str))
 
     f.close()
-
 
 
 if __name__ == '__main__':

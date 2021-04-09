@@ -31,9 +31,10 @@ class LineItem {
         if (item.includes('Gourmet Cheese Platter')) return 'Deli';
         if (item.includes('Stuffed Mushroom Platter')) return 'Kitchen';
         if (item.includes('Mozzarella & Tomato Platter')) return 'Kitchen';
+        if (item.includes('Fresh Mozzarella, Basil, and Tomato Platter')) return 'Kitchen';
         if (item.includes('Caprese Skewers')) return 'Kitchen';
         if (item.includes('Butternut Apple Soup')) return 'Kitchen';
-        if (item.includes('Pepperoni Stuffed Loaf')) return 'Kitchen';
+        if (item.includes('Capri Salad')) return 'Kitchen';
         if (item.includes('sauce')) return 'Kitchen';
         if (item.includes('Brussel Sprouts with Bacon')) return 'Kitchen';
         if (item.includes('Broccoli Rabe')) return 'Kitchen';
@@ -62,6 +63,10 @@ class LineItem {
         if ((item.includes('Sauce')) || item.includes('Gravy')) return 'Kitchen';
         if (item.includes('Macaroni')) return 'Kitchen';
         if (item.includes('Green Bean')) return 'Kitchen';
+        if (item.includes('Tossed Garden Salad')) return 'Kitchen';
+        if (item.includes('Fresh Fruit Salad')) return 'Kitchen';
+        if (item.includes('Caesar Salad')) return 'Kitchen';
+        if (item.includes('Primavera Pasta Salad')) return 'Kitchen';
         if (item.includes('Organic Roasted Tri-Colored Carrots')) return 'Kitchen';
         if (item.includes('Organic Tri Colored Baby Carrots')) return 'Kitchen';
         if (item.includes('New England Clam Chowder')) return 'Kitchen';
@@ -71,16 +76,12 @@ class LineItem {
         if (item.includes('Meatball')) return 'Kitchen';
         if (item.includes('Au Jus')) return 'Kitchen';
         if (item.includes('Mint Jelly')) return 'Kitchen';
-        if (item.includes('Salad')) return 'Salbar'
         if (item.includes('Fruit')) return 'Produce';
         if (item.includes('Shrimp')) return 'Seafood';
         if (item.includes('Lobster')) return 'Seafood';
         if (item.includes('Italian Style Baked Ziti')) return 'Kitchen';
-        if (item.includes('Sausage Stuffed Loaf')) return 'Kitchen';
         if (item.includes('Coleslaw')) return 'Kitchen';
         if (item.includes('Poached Salmon')) return 'Kitchen';
-        if (item.includes('Roasted Garlic Caprese Flatbread')) return 'Kitchen';
-        if (item.includes('Pepperoni Flatbread Pizza')) return 'Pizza';
         if (item.includes('Smoked Salmon Platter')) return 'Kitchen';
         if (item.includes('Pasta Cruda')) return 'Kitchen';
         if (item.includes('Roasted Yams')) return 'Kitchen';
@@ -95,7 +96,8 @@ class LineItem {
         if (item.includes('Eggplant Parmesan')) return 'Kitchen';
         if (item.includes('Eggplant Rollatini')) return 'Kitchen';
         if (item.includes('Vegetable Lasagna')) return 'Kitchen';
-        if (item.includes('Kale & Broccoli Slaw with Cranberries & Almonds')) return 'Salbar';
+        if (item.includes("Stew's Choice Salad")) return 'Kitchen';
+        if (item.includes('Kale & Broccoli Slaw with Cranberries & Almonds')) return 'Kitchen';
         if (item.includes("Stew's Naked Free Range Turkey")) return 'Kitchen';
         if (item.includes("Stew's Naked Turkey - Roasted - Medium")) return 'Kitchen';
         if (item.includes("Stew's Naked Turkey - Roasted - Large")) return 'Kitchen';
@@ -108,8 +110,15 @@ class LineItem {
         if (item.includes('Fukuoka Platter')) return 'Sushi';
         if (item.includes('Spring Platter')) return 'Sushi';
         if (item.includes('Sausage Stuffed Loaf')) return 'Pizza';
-        if (item.includes('Chicken Parm Stuffed Loaf')) return 'Pizza';
+        if (item.includes('Chicken Parmesan Stuffed Loaf')) return 'Pizza';
         if (item.includes('Pepperoni Stuffed Loaf')) return 'Pizza';
+        if (item.includes('Roasted Garlic Caprese Flatbread')) return 'Pizza';
+        if (item.includes('Pepperoni Flatbread Pizza')) return 'Pizza';
+        if (item.includes('Kitchen Bar Special Requirements')) return 'Kitchen';
+        if (item.includes('BBQ Special Requirements')) return 'BBQ';
+        if (item.includes('Fish Special Requirements')) return 'Seafood';
+        if (item.includes('Meat Special Requirements')) return 'Meat';
+        if (item.includes('Deli Bar Special Requirements')) return 'Deli';
     }
 }
 
