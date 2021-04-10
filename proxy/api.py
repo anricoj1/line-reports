@@ -11,9 +11,10 @@ proxy = Flask(__name__)
 
 @proxy.route('/proxy/orders', methods=['GET'])
 def orders():
-    with open('order.json') as response:
-        thisdata = json.load(response)
-        
+    data = requests.get('https://raw.githubusercontent.com/anricoj1/line-reports/master/proxy/order.json')
+
+    thisdata = data.json()
+
     return jsonify(thisdata)
 
 

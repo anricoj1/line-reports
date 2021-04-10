@@ -17,8 +17,9 @@ def index():
 
 @proxy.route('/proxy/orders', methods=['GET'])
 def orders():
-    with open(json_url) as response:
-        thisdata = json.load(response)
+    data = requests.get('https://raw.githubusercontent.com/anricoj1/line-reports/master/proxy/order.json')
+
+    thisdata = data.json()
 
     return jsonify(thisdata)
 

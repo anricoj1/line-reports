@@ -9,7 +9,7 @@ const LineReport = ({ orders, date, navSelection, setAppState }) => {
     let productArr = [];
     let counts = {}; //init product counts
     let countArr = [];
-    let selections = ['No Filter', 'Bakery', 'Kitchen', 'Deli', 'Produce', 'Sushi', 'BBQ'];
+    let selections = ['No Filter', 'Bakery', 'Kitchen', 'Deli', 'Produce','Seafood', 'Sushi', 'BBQ'];
 
     // set arrays to flatten
     let included = [];
