@@ -5,7 +5,7 @@ from flask import Flask, jsonify
 from dotenv import load_dotenv
 load_dotenv()
 
-proxy = Flask(__name__, static_folder="../build", static_url_path='/')
+proxy = Flask(__name__, static_folder="./build", static_url_path='/')
 
 SITE_ROOT = os.path.realpath(os.path.dirname(__file__))
 json_url = os.path.join(SITE_ROOT, 'order.json')
@@ -26,4 +26,4 @@ def orders():
 
 
 if __name__ == '__main__':
-    proxy.run(host='0.0.0.0', debug=False, port=os.environ.get('PORT', 8080))
+    proxy.run(host='0.0.0.0', debug=False)
