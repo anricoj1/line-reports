@@ -6,17 +6,26 @@ class LineItem {
     }
 
     getDept = (item) => {
-        if (item.includes('Pie')) return 'Bakery';
-        if (item.includes('Rolls')) return 'Bakery';
+        if (item.includes('Triple Brownie Bash Platter')) return "Bakery";
+        if (item.includes('Blueberry Pie')) return "Bakery";
+        if (item.includes('Cherry Pie')) return "Bakery";
+        if (item.includes('Coconut Custard Pie')) return "Bakery";
+        if (item.includes('Pumpkin Pie')) return "Bakery";
+        if (item.includes('Italian Cookie Platter')) return "Bakery";
+        if (item.includes('Cookie Platter Assortment')) return "Bakery";
+        if (item.includes('Gourmet High Top Apple Pie')) return "Bakery";
+        if (item.includes('Apple Pie')) return "Bakery";
+        if (item.includes('Pecan Pie')) return "Bakery";
+        if (item.includes('Dutch Apple Pie')) return "Bakery";
         if (item.includes('Cheesecake')) return 'Bakery';
-        if (item.includes('Cannoli')) return 'Bakery';
         if (item.includes('Mini Cannoli Platter')) return 'Bakery';
-        if (item.includes('Brownie')) return 'Bakery';
-        if (item.includes('Cookie')) return 'Bakery';
-        if (item.includes('Baguette')) return 'Bakery';
         if (item.includes('Fresh Fruit Tart')) return 'Bakery';
         if (item.includes('Peach Blueberry Rustic Tart')) return 'Bakery';
         if (item.includes('Country Hearth Bread')) return 'Bakery';
+        if (item.includes('Snowball Rolls')) return "Bakery";
+        if (item.includes('Kaiser Rolls')) return "Bakery";
+        if (item.includes('Portugese Rolls')) return "Bakery";
+        if (item.includes('Ciabatta Rolls')) return "Bakery";
         if (item.includes('Rugelach Platter')) return 'Bakery';
         if (item.includes('American PU PU')) return 'BBQ';
         if (item.includes('Crispy Fried Chicken')) return 'BBQ';
@@ -52,6 +61,7 @@ class LineItem {
         if (item.includes('Oven')) return 'Kitchen';
         if (item.includes('Ham')) return 'Kitchen';
         if (item.includes('Vegetable Minestrone Soup')) return 'Kitchen';
+        if (item.includes('Vegetable Fried Rice')) return 'Kitchen';
         if (item.includes('Grilled Salmon')) return 'Kitchen';
         if (item.includes('Cajun Salmon')) return 'Kitchen'
         if (item.includes('Lobster Bisque')) return 'Kitchen';

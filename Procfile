@@ -1,1 +1,1 @@
-web: gunicorn 'proxy.main:proxy' --preload
+web: gunicorn main:proxy --preload
