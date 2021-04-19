@@ -26,7 +26,9 @@ class LineItem {
         if (item.includes('Kaiser Rolls')) return "Bakery";
         if (item.includes('Portugese Rolls')) return "Bakery";
         if (item.includes('Ciabatta Rolls')) return "Bakery";
+        if (item.includes('French Baguette')) return "Bakery";
         if (item.includes('Rugelach Platter')) return 'Bakery';
+        if (item.includes('12 Flourless Chocolate Pecan Cookies')) return "Bakery";
         if (item.includes('American PU PU')) return 'BBQ';
         if (item.includes('Crispy Fried Chicken')) return 'BBQ';
         if (item.includes('Boneless Wing Platter')) return 'BBQ';
@@ -70,7 +72,8 @@ class LineItem {
         if (item.includes('Stuffing')) return 'Kitchen';
         if (item.includes('Rugalach')) return 'Kitchen';
         if (item.includes('Roasted Asparagus')) return 'Kitchen';
-        if ((item.includes('Sauce')) || item.includes('Gravy')) return 'Kitchen';
+        if (item.includes('Sauce')) return "Kitchen";
+        if (item.includes("Gravy")) return "Kitchen";
         if (item.includes('Macaroni')) return 'Kitchen';
         if (item.includes('Green Bean')) return 'Kitchen';
         if (item.includes('Tossed Garden Salad')) return 'Kitchen';
@@ -111,7 +114,6 @@ class LineItem {
         if (item.includes("Stew's Naked Free Range Turkey")) return 'Kitchen';
         if (item.includes("Stew's Naked Turkey - Roasted - Medium")) return 'Kitchen';
         if (item.includes("Stew's Naked Turkey - Roasted - Large")) return 'Kitchen';
-        if (item.includes("Fukuoka Platter")) return 'Kitchen';
         if (item.includes("Vegetable Lo Mein")) return 'Kitchen';
         if (item.includes('California Roll Platter')) return 'Sushi';
         if (item.includes('Kobe Platter')) return 'Sushi';
@@ -129,6 +131,7 @@ class LineItem {
         if (item.includes('Fish Special Requirements')) return 'Seafood';
         if (item.includes('Meat Special Requirements')) return 'Meat';
         if (item.includes('Deli Bar Special Requirements')) return 'Deli';
+        if (item.includes('Bakery Special Requirements')) return "Bakery"
     }
 }
 
