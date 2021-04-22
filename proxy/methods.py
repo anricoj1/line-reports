@@ -61,6 +61,7 @@ def getIncludedItems(upc):
         return [x for x in included]
     elif upc == '07196229369':
         included = ["1/2 lb. of Smoked Salmon", "Family Size Quiche Lorraine", "6 Assorted Bagels", "8 oz. Vegetable Cream Cheese", "4 Assorted Muffins", "2 lb. Fresh Fruit Bowl", "8 Dark Chocolate Dipped Strawberries"]
+        return [x for x in included]
     else:
         return False
 
