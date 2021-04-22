@@ -33,7 +33,6 @@ class LineItem {
         if (item.includes('Crispy Fried Chicken')) return 'BBQ';
         if (item.includes('Boneless Wing Platter')) return 'BBQ';
         if (item.includes('Wingette Platter')) return 'BBQ';
-        if (item.includes('Fresh Mozzarella')) return 'Deli';
         if (item.includes('3 Foot Grinder')) return 'Deli';
         if (item.includes('Wrap Platter')) return 'Deli';
         if (item.includes('Antipasto Platter')) return 'Deli';
@@ -42,7 +41,7 @@ class LineItem {
         if (item.includes('Gourmet Cheese Platter')) return 'Deli';
         if (item.includes('Stuffed Mushroom Platter')) return 'Kitchen';
         if (item.includes('Mozzarella & Tomato Platter')) return 'Kitchen';
-        if (item.includes('Fresh Mozzarella, Basil, and Tomato Platter')) return 'Kitchen';
+        if (item.includes('Fresh Mozzarella, Basil and Tomato Platter')) return 'Kitchen';
         if (item.includes('Caprese Skewers')) return 'Kitchen';
         if (item.includes('Butternut Apple Soup')) return 'Kitchen';
         if (item.includes('Capri Salad')) return 'Kitchen';
