@@ -28,10 +28,12 @@ class LineItem {
         if (item.includes('Ciabatta Rolls')) return "Bakery";
         if (item.includes('French Baguette')) return "Bakery";
         if (item.includes('Rugelach Platter')) return 'Bakery';
+        if (item.includes('Fruit of the Orchard Rustic Tart')) return "Bakery";
         if (item.includes('12 Flourless Chocolate Pecan Cookies')) return "Bakery";
         if (item.includes('American PU PU')) return 'BBQ';
         if (item.includes('Crispy Fried Chicken')) return 'BBQ';
         if (item.includes('Boneless Wing Platter')) return 'BBQ';
+        if (item.includes('Boneless Chicken Wing Platter')) return 'BBQ';
         if (item.includes('Wingette Platter')) return 'BBQ';
         if (item.includes('3 Foot Grinder')) return 'Deli';
         if (item.includes('Wrap Platter')) return 'Deli';
@@ -48,7 +50,6 @@ class LineItem {
         if (item.includes('sauce')) return 'Kitchen';
         if (item.includes('Brussel Sprouts with Bacon')) return 'Kitchen';
         if (item.includes('Broccoli Rabe')) return 'Kitchen';
-        if (item.includes('Boneless')) return 'Kitchen';
         if (item.includes('Beef')) return 'Kitchen';
         if (item.includes('Filet Mignon')) return 'Kitchen';
         if (item.includes('Penne')) return 'Kitchen';
@@ -84,7 +85,6 @@ class LineItem {
         if (item.includes('New England Clam Chowder')) return 'Kitchen';
         if (item.includes('Pistachio Crusted Salmon')) return  'Kitchen';
         if (item.includes('Cheese Lasagna')) return 'Kitchen';
-        if (item.includes('Chicken')) return 'Kitchen';
         if (item.includes('Meatball')) return 'Kitchen';
         if (item.includes('Au Jus')) return 'Kitchen';
         if (item.includes('Mint Jelly')) return 'Kitchen';
