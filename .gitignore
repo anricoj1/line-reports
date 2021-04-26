@@ -2,3 +2,4 @@ node_modules
 venv
 .flaskenv
 __pycache__
+main.log

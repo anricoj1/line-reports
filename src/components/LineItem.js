@@ -28,8 +28,10 @@ class LineItem {
         if (item.includes('Ciabatta Rolls')) return "Bakery";
         if (item.includes('French Baguette')) return "Bakery";
         if (item.includes('Rugelach Platter')) return 'Bakery';
+        if (item.includes('6 Assorted Bagels')) return 'Bakery';
         if (item.includes('Fruit of the Orchard Rustic Tart')) return "Bakery";
         if (item.includes('12 Flourless Chocolate Pecan Cookies')) return "Bakery";
+        if (item.includes('4 Assorted Muffins')) return "Bakery";
         if (item.includes('American PU PU')) return 'BBQ';
         if (item.includes('Crispy Fried Chicken')) return 'BBQ';
         if (item.includes('Boneless Wing Platter')) return 'BBQ';
@@ -41,6 +43,7 @@ class LineItem {
         if (item.includes('Cheese and Pepperoni Platter')) return 'Deli';
         if (item.includes('Sandwich Platter')) return 'Deli';
         if (item.includes('Gourmet Cheese Platter')) return 'Deli';
+        if (item.includes('8 oz. Vegetable Cream Cheese')) return 'Deli';
         if (item.includes('Stuffed Mushroom Platter')) return 'Kitchen';
         if (item.includes('Mozzarella & Tomato Platter')) return 'Kitchen';
         if (item.includes('Fresh Mozzarella, Basil and Tomato Platter')) return 'Kitchen';
@@ -54,6 +57,7 @@ class LineItem {
         if (item.includes('Filet Mignon')) return 'Kitchen';
         if (item.includes('Penne')) return 'Kitchen';
         if (item.includes('Brussels')) return 'Kitchen';
+        if (item.includes('8 Dark Chocolate Dipped Strawberries')) return "Kitchen";
         if (item.includes('Sweet Potato Mousse')) return 'Kitchen';
         if (item.includes('Potatoes')) return 'Kitchen';
         if (item.includes('Potato')) return 'Kitchen';
@@ -71,12 +75,14 @@ class LineItem {
         if (item.includes('Roasted Sliced Turkey Breast')) return 'Kitchen';
         if (item.includes('Stuffing')) return 'Kitchen';
         if (item.includes('Rugalach')) return 'Kitchen';
+        if (item.includes('Chicken Parmesan')) return "Kitchen";
         if (item.includes('Roasted Asparagus')) return 'Kitchen';
         if (item.includes('Sauce')) return "Kitchen";
         if (item.includes("Gravy")) return "Kitchen";
         if (item.includes('Macaroni')) return 'Kitchen';
         if (item.includes('Green Bean')) return 'Kitchen';
         if (item.includes('Tossed Garden Salad')) return 'Kitchen';
+        if (item.includes('Tossed Salad')) return "Kitchen";
         if (item.includes('Fresh Fruit Salad')) return 'Kitchen';
         if (item.includes('Caesar Salad')) return 'Kitchen';
         if (item.includes('Primavera Pasta Salad')) return 'Kitchen';
@@ -84,6 +90,7 @@ class LineItem {
         if (item.includes('Organic Tri Colored Baby Carrots')) return 'Kitchen';
         if (item.includes('New England Clam Chowder')) return 'Kitchen';
         if (item.includes('Pistachio Crusted Salmon')) return  'Kitchen';
+        if (item.includes('Grilled Lemon Herb Chicken Breast')) return 'Kitchen';
         if (item.includes('Cheese Lasagna')) return 'Kitchen';
         if (item.includes('Meatball')) return 'Kitchen';
         if (item.includes('Au Jus')) return 'Kitchen';
@@ -101,6 +108,8 @@ class LineItem {
         if (item.includes('Broccoli Cheddar Soup')) return 'Kitchen';
         if (item.includes('Gourmet Cheese Platter')) return 'Kitchen';
         if (item.includes('Sausage & Peppers')) return 'Kitchen';
+        if (item.includes('1/2 lb. of Smoked Salmon')) return 'Kitchen';
+        if (item.includes('Family Size Quiche Lorraine')) return 'Kitchen';
         if (item.includes('Chili Con Carne')) return 'Kitchen';
         if (item.includes("Manhattan Clam Chowder")) return 'Kitchen';
         if (item.includes('Italian Wedding Soup')) return 'Kitchen';
