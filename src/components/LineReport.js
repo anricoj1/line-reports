@@ -89,7 +89,7 @@ const LineReport = ({ orders, date, navSelection, setAppState }) => {
                         {countArr.map((item, i) => (
                             <tr key={i}>
                                 <td>{item.qty}</td>
-                                <td>{item.name}</td>
+                                <td>{item.item}</td>
                                 <td>{item.dept}</td>
                             </tr>
                         ))}
