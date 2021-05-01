@@ -76,5 +76,34 @@ def fetch_order(id):
     f.close()
 
 
+def fetch_fullorder(id):
+    arr = []
+    f = open('thisorder.json', 'w')
+
+    request = requests.get('https://storeapi.grocerkey.com/order/{}'.format(id), headers={
+        'Content-type': 'application/json',
+        'storeCode': '67879',
+        'auth_token': 'A/p4eEWnm3e+G7dnuwFFigTeX4iurSR04JRCHPc2Wl4Qn8rNvKIPJ2zmBCLnMOnbTiVfr6S4D6MBgX9DXzKDh0gUf53HEt3H9M95zzUrNVdgQM6r0BFFP7r8yzh4oziefaVqmj/1wZA81tSmXC5BIABJrWjXGtfXv0wvzR3oi87gRTj+9Jm3g0bzn0RanksLYMnIZT/uU97kJBtWW8IPng=='
+    })
+    
+    fullorder = request.json()
+
+    products = [getSize(x['Product']['Name'], x['Options'], x['Count'], x) for x in fullorder['OrderLines']]
+    included = [getIncludedItems(x['Product']['UPC']) for x in fullorder['OrderLines']]
+
+    arr.append({
+        "Order": fullorder,
+        "Attributes": fullorder['OrderAttributes'],
+        "Notes": [x['Note'] for x in fullorder['OrderLines']],
+        "Products": products,
+        "Includes": included
+    })
+            
+            
+    f.write(json.dumps(arr, default=str))
+
+    f.close()
+
+
 if __name__ == '__main__':
-    send_request()
+    fetch_fullorder(1782)
