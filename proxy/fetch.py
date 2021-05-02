@@ -38,7 +38,7 @@ def send_request():
             print('Working on %s' %(response['OrderID']))
             if len(fullorder['OrderLines']) > 0:
                 products = [getSize(x['Product']['Name'], x['Options'], x['Count'], x) for x in fullorder['OrderLines']]
-                included = [getIncludedItems(x['Product']['UPC']) for x in fullorder['OrderLines']]
+                included = [getIncludedItems(x['Product']['UPC'], x['Count']) for x in fullorder['OrderLines']]
             
             
                 main.extend([{
