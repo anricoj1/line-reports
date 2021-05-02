@@ -106,4 +106,4 @@ def fetch_fullorder(id):
 
 
 if __name__ == '__main__':
-    fetch_fullorder(1782)
+    send_request()
