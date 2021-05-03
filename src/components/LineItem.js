@@ -44,6 +44,7 @@ class LineItem {
         if (item.includes('Sandwich Platter')) return 'Deli';
         if (item.includes('Gourmet Cheese Platter')) return 'Deli';
         if (item.includes('8 oz. Vegetable Cream Cheese')) return 'Deli';
+        if (item.includes('Cold Cut Platter')) return 'Deli';
         if (item.includes('Stuffed Mushroom Platter')) return 'Kitchen';
         if (item.includes('Mozzarella & Tomato Platter')) return 'Kitchen';
         if (item.includes('Fresh Mozzarella, Basil and Tomato Platter')) return 'Kitchen';
@@ -76,7 +77,13 @@ class LineItem {
         if (item.includes('Stuffing')) return 'Kitchen';
         if (item.includes('Rugalach')) return 'Kitchen';
         if (item.includes('Chicken Parmesan')) return "Kitchen";
+        if (item.includes('Chicken Piccata')) return "Kitchen";
+        if (item.includes('Grilled Balsamic Chicken')) return "Kitchen";
+        if (item.includes('Chicken Noodle Soup')) return "Kitchen";
+        if (item.includes('Chicken and Broccoli')) return "Kitchen";
         if (item.includes('Roasted Asparagus')) return 'Kitchen';
+        if (item.includes('Chicken & Corn Soup')) return "Kitchen";
+        if (item.includes('Chicken Marsala')) return "Kitchen";
         if (item.includes('Sauce')) return "Kitchen";
         if (item.includes("Gravy")) return "Kitchen";
         if (item.includes('Macaroni')) return 'Kitchen';
