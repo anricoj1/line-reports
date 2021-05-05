@@ -3,9 +3,9 @@ def getSize(product, options, count, orderlines):
         if int(count) == 1:
             if len(options) > 0:
                 if "Size" in options[0]['Name']:
-                    return [product[0:len(product) - 2] + options[0]['Value'], [x['Value'] for x in options[1:]]]
+                    return [product[0:len(product) - 2] + options[0]['Value'], [x['Value'] + ' 1.5 lbs' for x in options[1:]]]
                 elif "Temperature:" in options[0]['Name']:
-                    return [product[0:len(product) - 2] + options[0]['Value'], [x['Value'] for x in options[1:]]]
+                    return [product[0:len(product) - 2] + options[0]['Value'], [x['Value'] + ' 1.5 lbs' for x in options[1:]]]
                 else:
                     return [product[0:len(product) - 2], [x['Value'] for x in options]]
             else:
@@ -13,11 +13,11 @@ def getSize(product, options, count, orderlines):
         else:
             if len(options) > 0:
                 if "Size" in options[0]['Name']:
-                    return [product[0:len(product) - 2] + options[0]['Value'], [x['Value'] for x in options[1:]]] * int(count)
+                    return [product[0:len(product) - 2] + options[0]['Value'], [x['Value'] + ' 1.5 lbs' for x in options[1:]]] * int(count)
                 elif "Temperature:" in options[0]['Name']:
-                    return [product[0:len(product) - 2] + options[0]['Value'], [x['Value'] for x in options[1:]]] * int(count)
+                    return [product[0:len(product) - 2] + options[0]['Value'], [x['Value'] + ' 1.5 lbs' for x in options[1:]]] * int(count)
                 else:
-                    return [product[0:len(product) - 2], [x['Value'] for x in options]] * int(count)
+                    return [product[0:len(product) - 2], [x['Value'] + ' 1.5 lbs' for x in options]] * int(count)
             else:
                 return [product[0:len(product) - 2]] * int(count)
     else:
