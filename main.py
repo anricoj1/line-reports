@@ -8,7 +8,7 @@ load_dotenv()
 proxy = Flask(__name__, static_folder="./build", static_url_path='/')
 
 SITE_ROOT = os.path.realpath(os.path.dirname(__file__))
-json_url = os.path.join(SITE_ROOT, 'order.json')
+json_url = os.path.join(SITE_ROOT + '\\proxy\\', 'order.json')
 
 @proxy.route('/')
 def index():
@@ -17,9 +17,8 @@ def index():
 
 @proxy.route('/proxy/orders', methods=['GET'])
 def orders():
-    data = requests.get('https://raw.githubusercontent.com/anricoj1/line-reports/master/proxy/order.json')
-
-    thisdata = data.json()
+    with open(json_url) as data:
+        thisdata = json.load(data)
 
     return jsonify(thisdata)
 
