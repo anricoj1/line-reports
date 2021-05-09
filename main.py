@@ -17,11 +17,11 @@ def index():
 
 @proxy.route('/proxy/orders', methods=['GET'])
 def orders():
-    with open(json_url) as data:
-        thisdata = json.load(data)
+    data = requests.get('https://raw.githubusercontent.com/anricoj1/line-reports/master/proxy/order.json')
+
+    thisdata = data.json()
 
     return jsonify(thisdata)
-
 
 
 if __name__ == '__main__':
