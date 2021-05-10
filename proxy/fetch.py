@@ -15,7 +15,7 @@ def send_request():
     main = []
     
     
-    data = requests.get('https://storeapi.grocerkey.com/orderview?pagesize=2000', headers={
+    data = requests.get('https://storeapi.grocerkey.com/orderview?pagesize=2500', headers={
         'Content-type': 'application/json',
         'storeCode': '67879',
         'auth_token': 'A/p4eEWnm3e+G7dnuwFFigTeX4iurSR04JRCHPc2Wl4Qn8rNvKIPJ2zmBCLnMOnbTiVfr6S4D6MBgX9DXzKDh0gUf53HEt3H9M95zzUrNVdgQM6r0BFFP7r8yzh4oziefaVqmj/1wZA81tSmXC5BIABJrWjXGtfXv0wvzR3oi87gRTj+9Jm3g0bzn0RanksLYMnIZT/uU97kJBtWW8IPng=='
