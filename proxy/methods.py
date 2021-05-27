@@ -6,6 +6,8 @@ def getSize(product, options, count, orderlines):
                     return [product[0:len(product) - 2] + options[0]['Value'], [x['Value'] for x in options[1:]]]
                 elif "Temperature:" in options[0]['Name']:
                     return [product[0:len(product) - 2] + options[0]['Value'], [x['Value'] for x in options[1:]]]
+                elif "Boar's Head" in options[0]['Name']:
+                    return [product[0:len(product) - 2] + options[0]['Value'], [x['Value'] for x in options[1:]]]
                 else:
                     return [product[0:len(product) - 2], [x['Value'] for x in options]]
             else:

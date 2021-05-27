@@ -83,6 +83,7 @@ class LineItem {
         if (item.includes('Chicken and Broccoli')) return "Kitchen";
         if (item.includes('Roasted Asparagus')) return 'Kitchen';
         if (item.includes('Chicken & Corn Soup')) return "Kitchen";
+        if (item.includes('Boneless BBQ Chicken Breast')) return "Kitchen";
         if (item.includes('Chicken Marsala')) return "Kitchen";
         if (item.includes('Sauce')) return "Kitchen";
         if (item.includes("Gravy")) return "Kitchen";
