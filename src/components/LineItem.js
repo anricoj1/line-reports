@@ -137,6 +137,7 @@ class LineItem {
         if (item.includes('Sunrise Platter')) return 'Sushi';
         if (item.includes('Fukuoka Platter')) return 'Sushi';
         if (item.includes('Spring Platter')) return 'Sushi';
+        if (item.includes('Ocean Delight Platter')) return 'Sushi';
         if (item.includes('Sausage Stuffed Loaf')) return 'Pizza';
         if (item.includes('Chicken Parmesan Stuffed Loaf')) return 'Pizza';
         if (item.includes('Pepperoni Stuffed Loaf')) return 'Pizza';
