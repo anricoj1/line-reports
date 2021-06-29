@@ -1,0 +1,134 @@
+.navigation-top {
+    display: flex;
+    position: fixed;
+
+    top: 0;
+    margin: 0;
+    padding: 0;
+
+    background: #003E3C;
+    color: white;
+
+    width: 100%;
+    height: 50px;
+}
+
+.navigation-top > li {
+    margin: auto;
+    list-style: none;
+    font-size: 25px;
+}
+
+.navigation-bottom {
+    position: fixed;
+    display: flex;
+
+    bottom: 0;
+    padding: 0;
+    margin: 0;
+
+    background: #003E3C;
+    color: white;
+
+    width: 100%;
+    height: 60px;
+}
+
+.navigation-bottom > li {
+    margin: auto;
+    list-style: none;
+    padding: 10px;
+}
+
+#content {
+    margin-top: 80px;
+    max-height: 100vh;
+    overflow-y: scroll;
+}
+
+#content::-webkit-scrollbar {
+    display: none;
+}
+
+/* order card */
+.order-card {
+    padding: 10px;
+    margin: 5px;
+}
+
+.orderID {
+    display: inline-flex;
+    font-weight: bold;
+    color: #003E3C;
+    font-size: 17px;
+    letter-spacing: 1px;
+}
+
+.status {
+    position: relative;
+    color: orange;
+    float: right;
+    margin-top: -50px;
+}
+
+/* invoice */
+.invoice > ul {
+    display: flex;
+    justify-content: space-around;
+
+    border-bottom: 1px solid #E0E0DE;
+}
+
+.invoice > ul > li {
+    list-style: none;
+    color: black;
+}
+
+.invoice > ul li {
+    position: relative;
+    cursor: pointer;
+    padding: 20px;
+}
+
+.invoice > ul li::after {
+    position: absolute;
+    content: "";
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: orange;
+    transform: scaleX(0);
+    transition: 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.invoice > ul > li:hover::after, ul li.active::after {
+    transform: scaleX(1);
+}
+
+/* overview */
+#info {
+    display: flex;
+}
+
+#info > * {
+    margin: auto;
+}
+
+.tag {
+    color: grey;
+    font-size: smaller;
+}
+
+.stat {
+    color: orange;
+}
+
+/* products */
+.product-list {
+    padding: 20px;
+}
+
+.included-list {
+    padding: 20px;
+}
