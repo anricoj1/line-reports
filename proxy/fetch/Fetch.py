@@ -84,4 +84,4 @@ class Fetch:
 
 
 if __name__ == '__main__':
-    Fetch().fetchOne(2454)
+    Fetch().writeJSON()

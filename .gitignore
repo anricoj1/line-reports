@@ -3,4 +3,3 @@ venv
 .flaskenv
 __pycache__
 main.log
-scheduler.bat

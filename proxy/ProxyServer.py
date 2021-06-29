@@ -14,11 +14,10 @@ class ProxyServer:
 
     
     def fetchOrders(self):
-        with open(self.json_url, 'r') as fileName:
-            orders = json.load(fileName)
-
-        return jsonify(orders)
-
+        data = requests.get('https://raw.githubusercontent.com/anricoj1/line-reports/master/proxy/src/orders.json')
+        thisdata = data.json()
+        
+        return jsonify(thisdata)
 
     def fetchOne(self, id):
         try:
