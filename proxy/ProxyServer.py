@@ -15,6 +15,7 @@ class ProxyServer:
     
     def fetchOrders(self):
         data = requests.get('https://raw.githubusercontent.com/anricoj1/line-reports/master/proxy/src/orders.json')
+
         thisdata = data.json()
         
         return jsonify(thisdata)
