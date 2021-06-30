@@ -4,9 +4,9 @@ from proxy.ProxyServer import ProxyServer
 
 proxy = Flask(__name__, static_folder="./client/build", static_url_path='/')
 
-@proxy.route('/')
-def index():
-    return proxy.send_static_file('index.html')
+# @proxy.route('/')
+# def index():
+#     return proxy.send_static_file('index.html')
 
 
 @proxy.route('/api/orders', methods=['GET'])

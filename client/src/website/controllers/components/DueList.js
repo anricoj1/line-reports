@@ -25,6 +25,7 @@ const DueList = ({ props, orders, classes }) => {
             <div id="list" className={classes.dueList}>
                 {orders.map((order, i) => (
                     <TableContainer key={i} className={classes.tableContainer}>
+                        {console.log(order)}
                         <h3 className="text-center">{order.User.Name}</h3>
                         <Table stickyHeader aria-label="sticky-table">
                             <TableHead>
@@ -58,7 +59,7 @@ const DueList = ({ props, orders, classes }) => {
                                     <TableCell>{order.User.PickupLocation}</TableCell>
                                     <TableCell>{order.User.Status}</TableCell>
                                     <TableCell>{order.User.StartTimeWindow}</TableCell>
-                                    <TableCell>{order.User.Timestamp}</TableCell>
+                                    <TableCell>{order.User.TimeStamp}</TableCell>
                                     <TableCell>{order.User.Total}</TableCell>
                                     <TableCell>{order.User.TotalProductCount}</TableCell>
                                 </TableRow>

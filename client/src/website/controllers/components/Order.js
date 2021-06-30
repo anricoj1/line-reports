@@ -51,7 +51,7 @@ const Order = ({ order, classes }) => {
                                 <TableCell>{order.Details.User.Name}</TableCell>
                                 <TableCell>{order.Details.PickupLocation.Name}</TableCell>
                                 <TableCell>{order.Details.Status}</TableCell>
-                                <TableCell>{order.Details.StartTimeWindow}</TableCell>
+                                <TableCell>{new Date(order.Details.StartTimeWindow).toLocaleString()}</TableCell>
                                 <TableCell>{order.Details.Created}</TableCell>
                                 <TableCell>{order.Details.GrandTotal}</TableCell>
                             </TableRow>
