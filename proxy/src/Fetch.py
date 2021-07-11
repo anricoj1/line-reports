@@ -7,6 +7,7 @@ from Order import Order
 class Fetch:
     def __init__(self):
         self.arr = list()
+        self.log = list()
 
     
     def getLength(self) -> int: # get TotalCount key from orderview returns int
@@ -40,7 +41,7 @@ class Fetch:
                     'Content-type': 'application/json',
                     'storeCode': '67879',
                     'auth_token': 'OOO9ohGBpcRN1YYVMljNYK0sGK/Dvb/mF63EGWzndkNQAjoosr8A99wM2UUSIe6/D2dERzeeAFpJ8ELnoT8xSCsoC33L3I35BYEEzhO1x0ouOfc2sJiHDVIWUUN1lEwTNhQ5uEJJXmJDV7s9X/uhaIOaBakcu4oHAcGERK487eVkDdKILZ0l6eN2ChxQDte/'
-                }, timeout=0.20)
+                }, timeout=20)
 
                 order = this_request.json()
 
@@ -51,7 +52,7 @@ class Fetch:
                 else:
                     print(order['OrderID'], order['Status'])
             except requests.RequestException:
-                pass
+                self.log.append(result)
 
         return self.arr
 
@@ -75,4 +76,7 @@ class Fetch:
 
         return f
 
-Fetch().write('orders.json', Fetch().orderlines())
+
+if __name__ == '__main__':
+    Fetch().write('orders.json', Fetch().orderlines())
+    print(Fetch().log)
