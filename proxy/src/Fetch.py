@@ -3,14 +3,14 @@ import requests
 import json
 from Order import Order
 
+# All errors from requests inherit from RequestExeception throw this error and retry
 
 class Fetch:
     def __init__(self):
         self.arr = list()
-        self.log = list()
 
-    
-    def getLength(self) -> int: # get TotalCount key from orderview returns int
+    # get TotalCount key from orderview
+    def getLength(self) -> str:
         data = requests.get('https://storeapi.grocerkey.com/orderview', headers={
             'Content-type': 'application/json',
             'storeCode': '67879',
@@ -21,42 +21,47 @@ class Fetch:
 
         return str(result['TotalCount'])
 
-    def orderview(self) -> list: # get Result list from orderview, returns list
+    # get Result list from orderview, returns list
+    def orderview(self) -> list:
+        # try to send request, timeout after 20s throw error and retry
         try:
             data = requests.get('https://storeapi.grocerkey.com/orderview?pagesize=3500', headers={
                 'Content-type': 'application/json',
                 'storeCode': '67879',
                 'auth_token': 'OOO9ohGBpcRN1YYVMljNYK0sGK/Dvb/mF63EGWzndkNQAjoosr8A99wM2UUSIe6/D2dERzeeAFpJ8ELnoT8xSCsoC33L3I35BYEEzhO1x0ouOfc2sJiHDVIWUUN1lEwTNhQ5uEJJXmJDV7s9X/uhaIOaBakcu4oHAcGERK487eVkDdKILZ0l6eN2ChxQDte/'
             }, timeout=20)
-            
+
             result = data.json()
             
             return result['Result']
 
         except requests.RequestException:
-            print('Request Failed')
+            print('request failed, trying again...')
             return self.orderview()
-
-    def orderlines(self) -> list: # orderlines for each order, returns list
+    
+     # orderlines for each order, returns list
+    def orderlines(self) -> list:
         results = self.orderview()
 
+        # iterate overview list
         for result in results:
-            try:
-                print(f'sending request to {result["OrderID"]}')
-                order = self.order(result['OrderID'])
+            # get order, handles try execept
+            order = self.order(result['OrderID'])
 
-                if order['Status'] != 'Canceled':
-                    self.arr.append(Order(result, order, order['OrderLines']).getOrder())
-                else:
-                    print(order['OrderID'], order['Status'])
-            except requests.RequestException:
-                print(f'{result["OrderID"]} failed')
-                self.log.append(result)
+            # not canceled append to list else print
+            if order['Status'] != 'Canceled':
+                self.arr.append(Order(result, order, order['OrderLines']).getOrder())
+            else:
+                print(order['OrderID'], order['Status'])                
+                
 
         return self.arr
 
-    def order(self, uid) -> dict: # get order by id, returns dict
+    # get order by id, returns dict
+    def order(self, uid) -> dict:
+        # try to send request to order id, timeout 20s throw error and try again
         try:
+            print(f'sending request to {uid}')
             data = requests.get(f'https://storeapi.grocerkey.com/order/{uid}', headers={
                 'Content-type': 'application/json',
                 'storeCode': '67879',
@@ -66,9 +71,11 @@ class Fetch:
             return data.json()
 
         except requests.RequestException:
+            print(f'request to {uid} failed, trying again')
             return self.order(uid)
 
-    def write(self) -> TextIOWrapper: # write json files
+    # writes json file
+    def write(self) -> TextIOWrapper:
         f = open('orders.json', 'w')
 
         f.write(json.dumps(self.orderlines(), default=str))
@@ -79,4 +86,3 @@ class Fetch:
 
 if __name__ == '__main__':
     Fetch().write()
-    print(Fetch().log)
