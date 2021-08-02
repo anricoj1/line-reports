@@ -49,6 +49,11 @@ class LineItem {
         if (item.includes('Stuffed Mushroom Platter')) return 'Kitchen';
         if (item.includes('Mozzarella & Tomato Platter')) return 'Kitchen';
         if (item.includes('Fresh Mozzarella, Basil and Tomato Platter')) return 'Kitchen';
+        if (item.includes('Grilled Buttermilk Chicken')) return 'Kitchen';
+        if (item.includes('Greek Salad')) return 'Kitchen';
+        if (item.includes('Pulled Pork')) return 'Kitchen';
+        if (item.includes('Smoked BBQ Pork Ribs')) return 'Kitchen';
+        if (item.includes('Brisket')) return 'Kitchen';
         if (item.includes('Caprese Skewers')) return 'Kitchen';
         if (item.includes('Butternut Apple Soup')) return 'Kitchen';
         if (item.includes('Capri Salad')) return 'Kitchen';
@@ -127,7 +132,15 @@ class LineItem {
         if (item.includes('Eggplant Parmesan')) return 'Kitchen';
         if (item.includes('Eggplant Rollatini')) return 'Kitchen';
         if (item.includes('Tomato Roasted Salmon')) return 'Kitchen';
-        if (item.includes('Chicken Chilli')) return 'Kitchen';
+        if (item.includes('Watermelon Feta')) return 'Kitchen';
+        if (item.includes('Tuscan Salad')) return 'Kitchen';
+        if (item.includes('Greek Salad')) return 'Kitchen';
+        if (item.includes('Strawberry & Goat Cheese Salad')) return 'Kitchen';
+        if (item.includes('Grilled Summer Vegetables')) return 'Kitchen';
+        if (item.includes('Grilled Asparagus')) return 'Kitchen';
+        if (item.includes('Fried Chicken 16pc')) return 'Kitchen';
+        if (item.includes('BBQ Chicken 16pc')) return 'Kitchen';
+        if (item.includes('Chicken Chili')) return 'Kitchen';
         if (item.includes('Vegetable Lasagna')) return 'Kitchen';
         if (item.includes("Stew's Choice Salad")) return 'Kitchen';
         if (item.includes('Crispy Orange Chicken')) return 'Kitchen';
@@ -156,6 +169,7 @@ class LineItem {
         if (item.includes('Meat Special Requirements')) return 'Meat';
         if (item.includes('Deli Bar Special Requirements')) return 'Deli';
         if (item.includes('Bakery Special Requirements')) return "Bakery"
+        if (item.includes('Produce Special Requirements')) return 'Produce';
     }
 }
 

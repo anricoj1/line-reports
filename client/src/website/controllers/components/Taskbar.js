@@ -66,7 +66,7 @@ export const ReportBar = ({ props, filter, setFilter }) => {
     const { state, setState, setDate, date } = props;
 
     // filter types
-    let filterTypes = ['No Filter', 'Bakery', 'Kitchen', 'Deli', 'Produce', 'Seafood', 'Sushi', 'BBQ'];
+    let filterTypes = ['No Filter', 'Bakery', 'Kitchen', 'Deli', 'Produce', 'Seafood', 'Sushi', 'BBQ', 'Pizza'];
 
     return (
         <ul className="taskbar">
