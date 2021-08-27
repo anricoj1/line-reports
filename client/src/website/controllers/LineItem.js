@@ -85,7 +85,7 @@ class LineItem {
         if (item.includes('Blackened Salmon')) return 'Kitchen';
         if (item.includes('Stuffing')) return 'Kitchen';
         if (item.includes('Rugalach')) return 'Kitchen';
-        if (item.includes('Chicken Parmesan Stuffed Loaf - Whole')) return 'Pizza';
+        if (item.includes('Chicken Parmesan Stuffed Loaf')) return 'Pizza';
         if (item.includes('Chicken Parmesan')) return "Kitchen";
         if (item.includes('Chicken Piccata')) return "Kitchen";
         if (item.includes('Grilled Balsamic Chicken')) return "Kitchen";
