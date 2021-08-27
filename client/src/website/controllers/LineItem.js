@@ -81,8 +81,11 @@ class LineItem {
         if (item.includes('Lobster Bisque')) return 'Kitchen';
         if (item.includes('Butternut Squash')) return 'Kitchen';
         if (item.includes('Roasted Sliced Turkey Breast')) return 'Kitchen';
+        if (item.includes('Mandarin Orange Chicken')) return 'Kitchen';
+        if (item.includes('Blackened Salmon')) return 'Kitchen';
         if (item.includes('Stuffing')) return 'Kitchen';
         if (item.includes('Rugalach')) return 'Kitchen';
+        if (item.includes('Chicken Parmesan Stuffed Loaf - Whole')) return 'Pizza';
         if (item.includes('Chicken Parmesan')) return "Kitchen";
         if (item.includes('Chicken Piccata')) return "Kitchen";
         if (item.includes('Grilled Balsamic Chicken')) return "Kitchen";
@@ -107,6 +110,7 @@ class LineItem {
         if (item.includes('Pistachio Crusted Salmon')) return  'Kitchen';
         if (item.includes('Grilled Lemon Herb Chicken Breast')) return 'Kitchen';
         if (item.includes('Cheese Lasagna')) return 'Kitchen';
+        if (item.includes('Grilled Colossal Shrimp')) return 'Kitchen';
         if (item.includes('Meatball')) return 'Kitchen';
         if (item.includes('Au Jus')) return 'Kitchen';
         if (item.includes('Mint Jelly')) return 'Kitchen';
@@ -159,7 +163,6 @@ class LineItem {
         if (item.includes('Ocean Garden Platter')) return 'Sushi';
         if (item.includes('Ocean Delight Platter')) return 'Sushi';
         if (item.includes('Sausage Stuffed Loaf')) return 'Pizza';
-        if (item.includes('Chicken Parmesan Stuffed Loaf')) return 'Pizza';
         if (item.includes('Pepperoni Stuffed Loaf')) return 'Pizza';
         if (item.includes('Roasted Garlic Caprese Flatbread')) return 'Pizza';
         if (item.includes('Pepperoni Flatbread Pizza')) return 'Pizza';

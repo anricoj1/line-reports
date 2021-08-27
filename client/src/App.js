@@ -1,6 +1,9 @@
 // react
 import React, { useEffect, useState } from 'react';
 
+// material-ui
+import { useMediaQuery, useTheme } from '@material-ui/core';
+
 // views
 import Website from './website/Website';
 import Mobile from './mobile/Mobile';
@@ -10,19 +13,17 @@ import './App.css';
 
 
 const App = () => {
-    // window width
-    const [ww, setWindow] = useState(window.innerWidth);
-
-    // view
+    // state
     const [view, setView] = useState(null);
 
-    // on resize
-    window.onresize = () => setWindow(window.innerWidth);
+    // theme & media useMediaQuery
+    let theme = useTheme();
+    let media = useMediaQuery(theme.breakpoints.down(900));
 
-    // useEffect when ww changes
+
     useEffect(() => {
-        0 < ww && ww < 900 ? setView(<Mobile />) : setView(<Website />)
-    },[ww]);
+        !media ? setView(<Website />) : setView(<Mobile />)
+    },[media]);
 
     return (
         <div className="App">
